@@ -107,6 +107,24 @@ if let name = optionalName {
 
 let nickname :String? = nil
 
+let fullName: String = "swift"
+let infromalGreeting = "Hi\(nickname ?? fullName)"
+
+/**多个相同类型的参数**/
+func sunof(numbers:Int...)->Int{
+    var sum = 0
+    for number in numbers{
+        sum += number
+    }
+    return sum
+}
+print(sunof())
+print(sunof(1,2,3))
+
+
+
+
+
 
 
 
