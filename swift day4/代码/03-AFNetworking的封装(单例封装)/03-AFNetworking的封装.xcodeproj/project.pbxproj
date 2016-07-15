@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63B7330B1D14DF6B006E24AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7330A1D14DF6B006E24AF /* AppDelegate.swift */; };
+		63B7330D1D14DF6B006E24AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7330C1D14DF6B006E24AF /* ViewController.swift */; };
+		63B733101D14DF6B006E24AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B7330E1D14DF6B006E24AF /* Main.storyboard */; };
+		63B733121D14DF6B006E24AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B733111D14DF6B006E24AF /* Assets.xcassets */; };
+		63B733151D14DF6B006E24AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B733131D14DF6B006E24AF /* LaunchScreen.storyboard */; };
+		63B7331D1D14EAAF006E24AF /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7331C1D14EAAF006E24AF /* NetworkTools.swift */; };
+		AA5259345C4E58294655DD2D /* Pods_03_AFNetworking___.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF11AE499CBDFE71F77BFD39 /* Pods_03_AFNetworking___.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D3F0AABF0CC571526C7EB6F /* Pods-03-AFNetworking的封装.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-03-AFNetworking的封装.release.xcconfig"; path = "Pods/Target Support Files/Pods-03-AFNetworking的封装/Pods-03-AFNetworking的封装.release.xcconfig"; sourceTree = "<group>"; };
+		63B733071D14DF6B006E24AF /* 03-AFNetworking的封装.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-AFNetworking的封装.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B7330A1D14DF6B006E24AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63B7330C1D14DF6B006E24AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63B7330F1D14DF6B006E24AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63B733111D14DF6B006E24AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63B733141D14DF6B006E24AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63B733161D14DF6B006E24AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B7331C1D14EAAF006E24AF /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		7C6425C3352018712C5A2921 /* Pods-03-AFNetworking的封装.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-03-AFNetworking的封装.debug.xcconfig"; path = "Pods/Target Support Files/Pods-03-AFNetworking的封装/Pods-03-AFNetworking的封装.debug.xcconfig"; sourceTree = "<group>"; };
+		BF11AE499CBDFE71F77BFD39 /* Pods_03_AFNetworking___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_03_AFNetworking___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63B733041D14DF6B006E24AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5259345C4E58294655DD2D /* Pods_03_AFNetworking___.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A7B6D331FFE7AA78DCD78F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF11AE499CBDFE71F77BFD39 /* Pods_03_AFNetworking___.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63B732FE1D14DF6B006E24AF = {
+			isa = PBXGroup;
+			children = (
+				63B733091D14DF6B006E24AF /* 03-AFNetworking的封装 */,
+				63B733081D14DF6B006E24AF /* Products */,
+				BED721F2B564D6C0F36E8A60 /* Pods */,
+				2A7B6D331FFE7AA78DCD78F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63B733081D14DF6B006E24AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63B733071D14DF6B006E24AF /* 03-AFNetworking的封装.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63B733091D14DF6B006E24AF /* 03-AFNetworking的封装 */ = {
+			isa = PBXGroup;
+			children = (
+				63B7330A1D14DF6B006E24AF /* AppDelegate.swift */,
+				63B7330C1D14DF6B006E24AF /* ViewController.swift */,
+				63B7331C1D14EAAF006E24AF /* NetworkTools.swift */,
+				63B7330E1D14DF6B006E24AF /* Main.storyboard */,
+				63B733111D14DF6B006E24AF /* Assets.xcassets */,
+				63B733131D14DF6B006E24AF /* LaunchScreen.storyboard */,
+				63B733161D14DF6B006E24AF /* Info.plist */,
+			);
+			path = "03-AFNetworking的封装";
+			sourceTree = "<group>";
+		};
+		BED721F2B564D6C0F36E8A60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C6425C3352018712C5A2921 /* Pods-03-AFNetworking的封装.debug.xcconfig */,
+				0D3F0AABF0CC571526C7EB6F /* Pods-03-AFNetworking的封装.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63B733061D14DF6B006E24AF /* 03-AFNetworking的封装 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B733191D14DF6B006E24AF /* Build configuration list for PBXNativeTarget "03-AFNetworking的封装" */;
+			buildPhases = (
+				35E0BB5C5E7DDA1853CFEDCA /* 📦 Check Pods Manifest.lock */,
+				63B733031D14DF6B006E24AF /* Sources */,
+				63B733041D14DF6B006E24AF /* Frameworks */,
+				63B733051D14DF6B006E24AF /* Resources */,
+				3ADE6B9222F372EF934436E7 /* 📦 Embed Pods Frameworks */,
+				31361BFFDB1A1D3CBFB309D5 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-AFNetworking的封装";
+			productName = "03-AFNetworking的封装";
+			productReference = 63B733071D14DF6B006E24AF /* 03-AFNetworking的封装.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63B732FF1D14DF6B006E24AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "小码哥";
+				TargetAttributes = {
+					63B733061D14DF6B006E24AF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 63B733021D14DF6B006E24AF /* Build configuration list for PBXProject "03-AFNetworking的封装" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63B732FE1D14DF6B006E24AF;
+			productRefGroup = 63B733081D14DF6B006E24AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63B733061D14DF6B006E24AF /* 03-AFNetworking的封装 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63B733051D14DF6B006E24AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B733151D14DF6B006E24AF /* LaunchScreen.storyboard in Resources */,
+				63B733121D14DF6B006E24AF /* Assets.xcassets in Resources */,
+				63B733101D14DF6B006E24AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31361BFFDB1A1D3CBFB309D5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-03-AFNetworking的封装/Pods-03-AFNetworking的封装-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35E0BB5C5E7DDA1853CFEDCA /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3ADE6B9222F372EF934436E7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-03-AFNetworking的封装/Pods-03-AFNetworking的封装-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63B733031D14DF6B006E24AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B7330D1D14DF6B006E24AF /* ViewController.swift in Sources */,
+				63B7330B1D14DF6B006E24AF /* AppDelegate.swift in Sources */,
+				63B7331D1D14EAAF006E24AF /* NetworkTools.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63B7330E1D14DF6B006E24AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B7330F1D14DF6B006E24AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63B733131D14DF6B006E24AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B733141D14DF6B006E24AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63B733171D14DF6B006E24AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63B733181D14DF6B006E24AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63B7331A1D14DF6B006E24AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6425C3352018712C5A2921 /* Pods-03-AFNetworking的封装.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-AFNetworking的封装/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-3-AFNetworking---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63B7331B1D14DF6B006E24AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D3F0AABF0CC571526C7EB6F /* Pods-03-AFNetworking的封装.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-AFNetworking的封装/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-3-AFNetworking---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63B733021D14DF6B006E24AF /* Build configuration list for PBXProject "03-AFNetworking的封装" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B733171D14DF6B006E24AF /* Debug */,
+				63B733181D14DF6B006E24AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B733191D14DF6B006E24AF /* Build configuration list for PBXNativeTarget "03-AFNetworking的封装" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B7331A1D14DF6B006E24AF /* Debug */,
+				63B7331B1D14DF6B006E24AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63B732FF1D14DF6B006E24AF /* Project object */;
+}

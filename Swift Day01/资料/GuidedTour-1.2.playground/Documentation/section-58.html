@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <title>section-58.html</title>
+        <link rel="stylesheet" type="text/css" href="style-1.1.15.css" />
+        <meta charset='utf-8'> 
+        <meta id="xcode-display" name="xcode-display" content="render" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name = "viewport" content = "width = device-width, maximum-scale=1.0">
+    </head>
+
+    <body id="conceptual_flow_with_tasks" class="jazz">
+        <div class="content-wrapper">
+            <article class="chapter>">
+                <section class="section">
+                    <p class="para">
+在<code class="code-voice">perimeter</code>的 setter 中，新值的名字是<code class="code-voice">newValue</code>。你可以在<code class="code-voice">set</code>之后显式的设置一个名字。
+</p><p class="para">
+注意<code class="code-voice">EquilateralTriangle</code>类的构造器执行了三步：
+</p><ol class="list-number">
+  <li class="item"><p class="para">
+设置子类声明的属性值
+</p>
+</li><li class="item"><p class="para">
+调用父类的构造器
+</p>
+</li><li class="item"><p class="para">
+改变父类定义的属性值。其他的工作比如调用方法、getters和setters也可以在这个阶段完成。
+</p>
+</li>
+</ol><p class="para">
+如果你不需要计算属性，但是仍然需要在设置一个新值之前或者之后运行代码，使用<code class="code-voice">willSet</code>和<code class="code-voice">didSet</code>。比如，下面的类确保三角形的边长总是和正方形的边长相同。
+</p>
+                </section>
+            </article>
+        </div>
+    </body>
+</html>

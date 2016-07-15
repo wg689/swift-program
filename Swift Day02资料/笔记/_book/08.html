@@ -1,0 +1,612 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>闭包 | Swift 介绍</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./09.html" />
+    
+    
+    <link rel="prev" href="./24/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="10" data-basepath="." data-revision="1463011493527">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         作业布置
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="07.html">
+            
+                
+                    <a href="./07.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="17/README.html">
+            
+                
+                    <a href="./17/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         枚举类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="18/README.html">
+            
+                
+                    <a href="./18/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="13swift/README.html">
+            
+                
+                    <a href="./13swift/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         类的定义
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="14/README.html">
+            
+                
+                    <a href="./14/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         类的构造函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="20/README.html">
+            
+                
+                    <a href="./20/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         类的析构函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="21/README.html">
+            
+                
+                    <a href="./21/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="22/README.html">
+            
+                
+                    <a href="./22/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="24/README.html">
+            
+                
+                    <a href="./24/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="10" data-path="08.html">
+            
+                
+                    <a href="./08.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="09.html">
+            
+                
+                    <a href="./09.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         懒加载
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="16/README.html">
+            
+                
+                    <a href="./16/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         常见注释
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="25.html">
+            
+                
+                    <a href="./25.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         访问权限
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="26/README.html">
+            
+                
+                    <a href="./26/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         异常处理
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Swift 介绍</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_257">
+                    
+                        <h1 id="">闭包</h1>
+<h3 id="">闭包的介绍</h3>
+<ul>
+<li>闭包和OC中的block非常相似<ul>
+<li>OC中的block是匿名的函数</li>
+<li>Swift中的闭包是一个特殊的函数</li>
+<li>block和闭包都经常用于回调</li>
+</ul>
+</li>
+<li>注意:闭包和block一样,第一次使用时可能不习惯它的语法,可以先按照使用简单的闭包,随着学习的深入,慢慢掌握其灵活的运用方法.</li>
+</ul>
+<h3 id="">闭包的使用</h3>
+<h5 id="block">block的用法回顾</h5>
+<ul>
+<li>定义网络请求的类</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">HttpTool</span> : <span class="hljs-title">NSObject</span></span>
+- (<span class="hljs-keyword">void</span>)loadRequest:(<span class="hljs-keyword">void</span> (^)())callBackBlock;
+<span class="hljs-keyword">@end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">HttpTool</span></span>
+- (<span class="hljs-keyword">void</span>)loadRequest:(<span class="hljs-keyword">void</span> (^)())callBackBlock
+{
+    <span class="hljs-built_in">dispatch_async</span>(dispatch_get_global_queue(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), ^{
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"加载网络数据:%@"</span>, [<span class="hljs-built_in">NSThread</span> currentThread]);
+
+        <span class="hljs-built_in">dispatch_async</span>(dispatch_get_main_queue(), ^{
+            callBackBlock();
+        });
+    });
+}
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<ul>
+<li>进行网络请求,请求到数据后利用block进行回调</li>
+</ul>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)touchesBegan:(<span class="hljs-built_in">NSSet</span>&lt;UITouch *&gt; *)touches withEvent:(UIEvent *)event
+{
+    [<span class="hljs-keyword">self</span><span class="hljs-variable">.httpTool</span> loadRequest:^{
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"主线程中,将数据回调.%@"</span>, [<span class="hljs-built_in">NSThread</span> currentThread]);
+    }];
+}
+</code></pre>
+<ul>
+<li>block写法总结:</li>
+</ul>
+<pre><code>block的写法:
+    类型:
+    返回值(^block的名称)(block的参数)
+
+    值:
+    ^(参数列表) {
+        // 执行的代码
+    };
+</code></pre><h5 id="block">使用闭包代替block</h5>
+<ul>
+<li>定义网络请求的类</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HttpTool</span>: <span class="hljs-title">NSObject</span> </span>{
+
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">loadRequest</span><span class="hljs-params">(callBack : <span class="hljs-params">()</span>-&gt;<span class="hljs-params">()</span>)</span></span>{
+        dispatch_async(dispatch_get_global_queue(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>)) { () -&gt; <span class="hljs-type">Void</span> <span class="hljs-keyword">in</span>
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"加载数据"</span>, [<span class="hljs-type">NSThread</span>.currentThread()])
+
+             dispatch_async(dispatch_get_main_queue(), { () -&gt; <span class="hljs-type">Void</span> <span class="hljs-keyword">in</span>
+                callBack()
+             })
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>进行网络请求,请求到数据后利用闭包进行回调</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-keyword">override</span> <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">touchesBegan</span><span class="hljs-params">(touches: Set&lt;UITouch&gt;, withEvent event: UIEvent?)</span> </span>{
+        <span class="hljs-comment">// 网络请求</span>
+        httpTool.loadRequest ({ () -&gt; () <span class="hljs-keyword">in</span>
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"回到主线程"</span>, <span class="hljs-type">NSThread</span>.currentThread());
+        })
+    }
+</code></pre>
+<ul>
+<li>闭包写法总结:</li>
+</ul>
+<pre><code>闭包的写法:
+    类型:(形参列表)-&gt;(返回值)
+    技巧:初学者定义闭包类型,直接写()-&gt;().再填充参数和返回值
+
+    值:
+    {
+        (形参) -&gt; 返回值类型 in
+        // 执行代码
+    }
+</code></pre><h5 id="">闭包的简写</h5>
+<ul>
+<li>如果闭包没有参数,没有返回值.in和in之前的内容可以省略</li>
+</ul>
+<pre><code class="lang-swift">    httpTool.loadRequest({
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"回到主线程"</span>, <span class="hljs-type">NSThread</span>.currentThread());
+    })
+</code></pre>
+<ul>
+<li>尾随闭包写法:<ul>
+<li>如果闭包是函数的最后一个参数,则可以将闭包写在()后面</li>
+<li>如果函数只有一个参数,并且这个参数是闭包,那么()可以不写</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift">    httpTool.loadRequest() {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"回到主线程"</span>, <span class="hljs-type">NSThread</span>.currentThread());
+    }
+</code></pre>
+<pre><code class="lang-swift">    <span class="hljs-comment">// 开发中建议该写法</span>
+    httpTool.loadRequest {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"回到主线程"</span>, <span class="hljs-type">NSThread</span>.currentThread());
+    }
+</code></pre>
+<h3 id="">闭包的循环引用</h3>
+<ul>
+<li>如果在HttpTool中有对闭包进行强引用,则会形成循环引用</li>
+<li>补充:在Swift中检测一个对象是否销毁,可以实现对象的<code>deinit</code>函数</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-comment">// 析构函数(相当于OC中dealloc方法)</span>
+    <span class="hljs-keyword">deinit</span> {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"ViewController----deinit"</span>)
+    }
+</code></pre>
+<ul>
+<li>循环引用的(实现)<ul>
+<li>该实现是为了产生循环引用,而产生的循环引用</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HttpTool</span>: <span class="hljs-title">NSObject</span> </span>{
+
+    <span class="hljs-comment">// 定义属性,来强引用传入的闭包</span>
+    <span class="hljs-keyword">var</span> callBack : (()-&gt;())?
+
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">loadRequest</span><span class="hljs-params">(callBack : <span class="hljs-params">()</span>-&gt;<span class="hljs-params">()</span>)</span></span>{
+        dispatch_async(dispatch_get_global_queue(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>)) { () -&gt; <span class="hljs-type">Void</span> <span class="hljs-keyword">in</span>
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"加载数据"</span>, [<span class="hljs-type">NSThread</span>.currentThread()])
+
+             dispatch_async(dispatch_get_main_queue(), { () -&gt; <span class="hljs-type">Void</span> <span class="hljs-keyword">in</span>
+                callBack()
+             })
+        }
+
+        <span class="hljs-keyword">self</span>.callBack = callBack
+    }
+}
+</code></pre>
+<ul>
+<li>swift中解决循环引用的方式</li>
+<li>方案一:<ul>
+<li>使用weak,对当前控制器使用弱引用</li>
+<li>但是因为self可能有值也可能没有值,因此weakSelf是一个可选类型,在真正使用时可以对其强制解包(该处强制解包没有问题,因为控制器一定存在,否则无法调用所在函数)</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-comment">// 解决方案一:</span>
+    <span class="hljs-keyword">weak</span> <span class="hljs-keyword">var</span> weakSelf = <span class="hljs-keyword">self</span>
+    httpTool.loadData {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"加载数据完成,更新界面:"</span>, <span class="hljs-type">NSThread</span>.currentThread())
+        weakSelf!.view.backgroundColor = <span class="hljs-type">UIColor</span>.redColor()
+    }
+</code></pre>
+<ul>
+<li>方案二:<ul>
+<li>和方案一类型,只是书写方式更加简单</li>
+<li>可以写在闭包中,并且在闭包中用到的self都是弱引用</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift">    httpTool.loadData {[<span class="hljs-keyword">weak</span> <span class="hljs-keyword">self</span>] () -&gt; () <span class="hljs-keyword">in</span>
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"加载数据完成,更新界面:"</span>, <span class="hljs-type">NSThread</span>.currentThread())
+        <span class="hljs-keyword">self</span>!.view.backgroundColor = <span class="hljs-type">UIColor</span>.redColor()
+    }
+</code></pre>
+<ul>
+<li>方案三:(常用)<ul>
+<li>使用关键字<code>unowned</code></li>
+<li>从行为上来说 unowned 更像OC中的 unsafe_unretained</li>
+<li>unowned 表示:即使它原来引用的对象被释放了，仍然会保持对被已经释放了的对象的一个 &quot;无效的&quot; 引用，它不能是 Optional 值，也不会被指向 nil</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift">httpTool.loadData {[<span class="hljs-keyword">unowned</span> <span class="hljs-keyword">self</span>] () -&gt; () <span class="hljs-keyword">in</span>
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"加载数据完成,更新界面:"</span>, <span class="hljs-type">NSThread</span>.currentThread())
+        <span class="hljs-keyword">self</span>.view.backgroundColor = <span class="hljs-type">UIColor</span>.redColor()
+    }
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./24/README.html" class="navigation navigation-prev " aria-label="Previous page: 协议"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./09.html" class="navigation navigation-next " aria-label="Next page: 懒加载"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

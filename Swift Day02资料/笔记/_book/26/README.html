@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>异常处理 | Swift 介绍</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    
+    <link rel="prev" href="../25.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="14" data-basepath=".." data-revision="1463011493527">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         作业布置
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="07.html">
+            
+                
+                    <a href="../07.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="17/README.html">
+            
+                
+                    <a href="../17/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         枚举类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="18/README.html">
+            
+                
+                    <a href="../18/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="13swift/README.html">
+            
+                
+                    <a href="../13swift/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         类的定义
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="14/README.html">
+            
+                
+                    <a href="../14/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         类的构造函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="20/README.html">
+            
+                
+                    <a href="../20/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         类的析构函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="21/README.html">
+            
+                
+                    <a href="../21/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="22/README.html">
+            
+                
+                    <a href="../22/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="24/README.html">
+            
+                
+                    <a href="../24/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="08.html">
+            
+                
+                    <a href="../08.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="09.html">
+            
+                
+                    <a href="../09.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         懒加载
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="16/README.html">
+            
+                
+                    <a href="../16/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         常见注释
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="25.html">
+            
+                
+                    <a href="../25.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         访问权限
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="14" data-path="26/README.html">
+            
+                
+                    <a href="../26/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         异常处理
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Swift 介绍</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_262">
+                    
+                        <h1 id="">异常处理</h1>
+<h3 id="">异常的介绍</h3>
+<ul>
+<li>只要我们在编程，就一定要面对错误处理的问题。</li>
+<li>Swift在设计的时候就尽可能让我们明确感知错误，明确处理错误<ul>
+<li>比如:只有使用Optional才能处理空值；</li>
+</ul>
+</li>
+<li>如何描述一个错误？<ul>
+<li>在Swift里，任何一个遵从ErrorType protocol的类型，都可以用于描述错误。</li>
+<li>ErrorType是一个空的protocol，它唯一的功能，就是告诉Swift编译器，某个类型用来表示一个错误。</li>
+<li>通常，我们使用一个enum来定义各种错误的可能性</li>
+</ul>
+</li>
+</ul>
+<h3 id="">异常的示例</h3>
+<ul>
+<li>假如我们想要读取一个文件中的内容,按照OC的逻辑我们可以这样来模拟<ul>
+<li>当我们调用方法获取结果为nil时,你并不能确定到底参数了什么错误得到了nil</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">readFileContent</span><span class="hljs-params">(filePath : String)</span> -&gt; <span class="hljs-title">String</span>? </span>{
+    <span class="hljs-comment">// 1.filePath为""</span>
+    <span class="hljs-keyword">if</span> filePath == <span class="hljs-string">""</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">nil</span>
+    }
+
+    <span class="hljs-comment">// 2.filepath有值,但是没有对应的文件</span>
+    <span class="hljs-keyword">if</span> filePath != <span class="hljs-string">"/User/Desktop/123.plist"</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">nil</span>
+    }
+
+    <span class="hljs-comment">// 3.取出其中的内容</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"123"</span>
+}
+
+readFileContent(<span class="hljs-string">"abc"</span>)
+</code></pre>
+<ul>
+<li>使用异常对上述方法进行改进</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">// 1.定义异常</span>
+<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">FileReadError</span> : <span class="hljs-title">ErrorType</span> </span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">FileISNull</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">FileNotFound</span>
+}
+
+<span class="hljs-comment">// 2.改进方法,让方法抛出异常</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">readFileContent</span><span class="hljs-params">(filePath : String)</span> <span class="hljs-title">throws</span> -&gt; <span class="hljs-title">String</span> </span>{
+    <span class="hljs-comment">// 1.filePath为""</span>
+    <span class="hljs-keyword">if</span> filePath == <span class="hljs-string">""</span> {
+
+        throw <span class="hljs-type">FileReadError</span>.<span class="hljs-type">FileISNull</span>
+    }
+
+    <span class="hljs-comment">// 2.filepath有值,但是没有对应的文件</span>
+    <span class="hljs-keyword">if</span> filePath != <span class="hljs-string">"/User/Desktop/123.plist"</span> {
+
+        throw <span class="hljs-type">FileReadError</span>.<span class="hljs-type">FileISNull</span>
+    }
+
+    <span class="hljs-comment">// 3.取出其中的内容</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"123"</span>
+}
+</code></pre>
+<ul>
+<li>处理异常有三种方式</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">// 3.异常的处理三种方式</span>
+<span class="hljs-comment">// 3.1.try方式,需要手动处理异常</span>
+<span class="hljs-keyword">do</span> {
+    <span class="hljs-keyword">let</span> result = try readFileContent(<span class="hljs-string">"abc"</span>)
+} catch {
+    <span class="hljs-built_in">print</span>(error)
+}
+
+<span class="hljs-comment">// 3.2.try?方式,不处理异常,如果出现了异常,则返回一个nil.没有异常,则返回对应的值</span>
+<span class="hljs-comment">// 最终返回结果为一个可选类型</span>
+<span class="hljs-keyword">let</span> result = try? readFileContent(<span class="hljs-string">"abc"</span>)
+
+<span class="hljs-comment">// 3.3.try!方法,告诉系统该方法没有异常.</span>
+<span class="hljs-comment">// 注意:如果出现了异常,则程序会崩溃</span>
+try! readFileContent(<span class="hljs-string">"abc"</span>)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../25.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 访问权限"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

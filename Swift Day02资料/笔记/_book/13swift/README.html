@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>类的定义 | Swift 介绍</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../14/README.html" />
+    
+    
+    <link rel="prev" href="../18/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="4" data-basepath=".." data-revision="1463011493527">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         作业布置
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="07.html">
+            
+                
+                    <a href="../07.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="17/README.html">
+            
+                
+                    <a href="../17/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         枚举类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="18/README.html">
+            
+                
+                    <a href="../18/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4" data-path="13swift/README.html">
+            
+                
+                    <a href="../13swift/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         类的定义
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="14/README.html">
+            
+                
+                    <a href="../14/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         类的构造函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="20/README.html">
+            
+                
+                    <a href="../20/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         类的析构函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="21/README.html">
+            
+                
+                    <a href="../21/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="22/README.html">
+            
+                
+                    <a href="../22/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="24/README.html">
+            
+                
+                    <a href="../24/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="08.html">
+            
+                
+                    <a href="../08.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="09.html">
+            
+                
+                    <a href="../09.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         懒加载
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="16/README.html">
+            
+                
+                    <a href="../16/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         常见注释
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="25.html">
+            
+                
+                    <a href="../25.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         访问权限
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="26/README.html">
+            
+                
+                    <a href="../26/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         异常处理
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Swift 介绍</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_249">
+                    
+                        <h1 id="swift">Swift中类的使用</h1>
+<h3 id="">主要内容</h3>
+<ul>
+<li>类的介绍和定义</li>
+<li>类的属性</li>
+<li>类的构造函数</li>
+</ul>
+<h3 id="-">一. 类的介绍和定义</h3>
+<ul>
+<li>Swift也是一门面向对象开发的语言</li>
+<li>面向对象的基础是类,类产生了对象</li>
+<li>在Swift中如何定义类呢?<ul>
+<li>class是Swift中的关键字,用于定义类</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> 类名 : <span class="hljs-title">SuperClass</span> </span>{
+    <span class="hljs-comment">// 定义属性和方法</span>
+}
+</code></pre>
+<ul>
+<li>注意:<ul>
+<li>定义的类,可以没有父类.那么该类是rootClass</li>
+<li>通常情况下,定义类时.继承自NSObject(非OC的NSObject)</li>
+</ul>
+</li>
+</ul>
+<h3 id="-">二. 如何定义类的属性</h3>
+<h5 id="">类的属性介绍</h5>
+<ul>
+<li>Swift中类的属性有多种<ul>
+<li>存储属性:存储实例的常量和变量</li>
+<li>计算属性:通过某种方式计算出来的属性</li>
+<li>类属性:与整个类自身相关的属性</li>
+</ul>
+</li>
+</ul>
+<h5 id="">存储属性</h5>
+<ul>
+<li>存储属性是最简单的属性，它作为类实例的一部分，用于存储常量和变量</li>
+<li>可以给存储属性提供一个默认值，也可以在初始化方法中对其进行初始化</li>
+<li>下面是存储属性的写法<ul>
+<li>age和name都是存储属性,用来记录该学生的年龄和姓名</li>
+<li>chineseScore和mathScore也是存储属性,用来记录该学生的语文分数和数学分数</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span> : <span class="hljs-title">NSObject</span> </span>{
+    <span class="hljs-comment">// 定义属性</span>
+    <span class="hljs-comment">// 存储属性</span>
+    <span class="hljs-keyword">var</span> age : <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">var</span> name : <span class="hljs-type">String</span>?
+
+    <span class="hljs-keyword">var</span> chineseScore : <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">var</span> mathScore : <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+}
+
+<span class="hljs-comment">// 创建学生对象</span>
+<span class="hljs-keyword">let</span> stu = <span class="hljs-type">Student</span>()
+
+<span class="hljs-comment">// 给存储属性赋值</span>
+stu.age = <span class="hljs-number">10</span>
+stu.name = <span class="hljs-string">"why"</span>
+
+stu.chineseScore = <span class="hljs-number">89.0</span>
+stu.mathScore = <span class="hljs-number">98.0</span>
+</code></pre>
+<h5 id="">计算属性</h5>
+<ul>
+<li>计算属性并不存储实际的值，而是提供一个getter和一个可选的setter来间接获取和设置其它属性</li>
+<li>计算属性<code>一般</code>只提供getter方法</li>
+<li>如果只提供getter，而不提供setter，则该计算属性为只读属性,并且可以省略get{}</li>
+<li>下面是计算属性的写法<ul>
+<li>averageScore是计算属性,通过chineseScore和mathScore计算而来的属性</li>
+<li>在setter方法中有一个newValue变量,是系统指定分配的</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span> : <span class="hljs-title">NSObject</span> </span>{
+    <span class="hljs-comment">// 定义属性</span>
+    <span class="hljs-comment">// 存储属性</span>
+    <span class="hljs-keyword">var</span> age : <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">var</span> name : <span class="hljs-type">String</span>?
+
+    <span class="hljs-keyword">var</span> chineseScore : <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">var</span> mathScore : <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+
+    <span class="hljs-comment">// 计算属性</span>
+    <span class="hljs-keyword">var</span> averageScore : <span class="hljs-type">Double</span> {
+        <span class="hljs-keyword">get</span> {
+            <span class="hljs-keyword">return</span> (chineseScore + mathScore) / <span class="hljs-number">2</span>
+        }
+
+        <span class="hljs-comment">// 没有意义,因为之后获取值时依然是计算得到的</span>
+        <span class="hljs-comment">// newValue是系统分配的变量名,内部存储着新值</span>
+        <span class="hljs-keyword">set</span> {
+            <span class="hljs-keyword">self</span>.averageScore = newValue
+        }
+    }
+}
+
+<span class="hljs-comment">// 获取计算属性的值</span>
+<span class="hljs-built_in">print</span>(stu.averageScore)
+</code></pre>
+<h5 id="">类属性</h5>
+<ul>
+<li>类属性是与类相关联的，而不是与类的实例相关联</li>
+<li>所有的类和实例都共有一份类属性.因此在某一处修改之后,该类属性就会被修改</li>
+<li>类属性的设置和修改,需要通过类来完成</li>
+<li>下面是类属性的写法<ul>
+<li>类属性使用static来修饰</li>
+<li>courseCount是类属性,用来记录学生有多少门课程</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span> : <span class="hljs-title">NSObject</span> </span>{
+    <span class="hljs-comment">// 定义属性</span>
+    <span class="hljs-comment">// 存储属性</span>
+    <span class="hljs-keyword">var</span> age : <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">var</span> name : <span class="hljs-type">String</span>?
+
+    <span class="hljs-keyword">var</span> chineseScore : <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">var</span> mathScore : <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+
+    <span class="hljs-comment">// 计算属性</span>
+    <span class="hljs-keyword">var</span> averageScore : <span class="hljs-type">Double</span> {
+        <span class="hljs-keyword">get</span> {
+            <span class="hljs-keyword">return</span> (chineseScore + mathScore) / <span class="hljs-number">2</span>
+        }
+
+        <span class="hljs-comment">// 没有意义.newValue是系统分配的变量名,内部存储着新值</span>
+        <span class="hljs-keyword">set</span> {
+            <span class="hljs-keyword">self</span>.averageScore = newValue
+        }
+    }
+
+    <span class="hljs-comment">// 类属性</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">var</span> corseCount : <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>
+}
+
+<span class="hljs-comment">// 设置类属性的值</span>
+<span class="hljs-type">Student</span>.corseCount = <span class="hljs-number">3</span>
+<span class="hljs-comment">// 取出类属性的值</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-type">Student</span>.corseCount)
+</code></pre>
+<h5 id="">监听属性的改变</h5>
+<ul>
+<li>在OC中我们可以重写set方法来监听属性的改变</li>
+<li>Swift中可以通过属性观察者来监听和响应属性值的变化</li>
+<li>通常是监听存储属性和类属性的改变.(对于计算属性，我们不需要定义属性观察者，因为我们可以在计算属性的setter中直接观察并响应这种值的变化)</li>
+<li>我们通过设置以下观察方法来定义观察者<ul>
+<li>willSet：在属性值被存储之前设置。此时新属性值作为一个常量参数被传入。该参数名默认为newValue，我们可以自己定义该参数名</li>
+<li>didSet：在新属性值被存储后立即调用。与willSet相同，此时传入的是属性的旧值，默认参数名为oldValue</li>
+<li>willSet与didSet只有在属性第一次被设置时才会调用，在初始化时，不会去调用这些监听方法</li>
+</ul>
+</li>
+<li>监听的方式如下:<ul>
+<li>监听age和name的变化</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> : <span class="hljs-title">NSObject</span> </span>{
+    <span class="hljs-keyword">var</span> name : <span class="hljs-type">String</span>? {
+        <span class="hljs-comment">// 可以给newValue自定义名称</span>
+        <span class="hljs-keyword">willSet</span> (<span class="hljs-keyword">new</span>){ <span class="hljs-comment">// 属性即将改变,还未改变时会调用的方法</span>
+            <span class="hljs-comment">// 在该方法中有一个默认的系统属性newValue,用于存储新值</span>
+            <span class="hljs-built_in">print</span>(name)
+            <span class="hljs-built_in">print</span>(<span class="hljs-keyword">new</span>)
+        }
+        <span class="hljs-comment">// 可以给oldValue自定义名称</span>
+        <span class="hljs-keyword">didSet</span> (old) { <span class="hljs-comment">// 属性值已经改变了,会调用的方法</span>
+            <span class="hljs-comment">// 在该方法中有一个默认的系统属性oldValue,用于存储旧值</span>
+            <span class="hljs-built_in">print</span>(name)
+            <span class="hljs-built_in">print</span>(old)
+        }
+    }
+    <span class="hljs-keyword">var</span> age : <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">var</span> height : <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+}
+
+<span class="hljs-keyword">let</span> p : <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span>()
+
+<span class="hljs-comment">// 在赋值时,监听该属性的改变</span>
+<span class="hljs-comment">// 在OC中是通过重写set方法</span>
+<span class="hljs-comment">// 在swift中,可以给属性添加监听器</span>
+p.name = <span class="hljs-string">"why"</span>
+
+<span class="hljs-comment">//p.name = "yz"</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../18/README.html" class="navigation navigation-prev " aria-label="Previous page: 结构体"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../14/README.html" class="navigation navigation-next " aria-label="Next page: 类的构造函数"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
