@@ -419,6 +419,7 @@ print(triangleAndSquare.triangleL.sideLength)
 triangleAndSquare.squareL = Square(sideLength: 10.0, name: "lager shape")
 print(triangleAndSquare.triangleL.sideLength)
 
+
 /*****枚举****/
 enum Rank: Int {
     //enum case must declare a raw value when the preceding raw value is not an integer
