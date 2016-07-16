@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  swift
 //
-//  Created by  汪刚 on 16/7/15.
+//  Created by   on 16/7/15.
 //  Copyright © 2016年 wanggang. All rights reserved.
 //
 
