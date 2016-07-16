@@ -121,6 +121,102 @@ func sunof(numbers:Int...)->Int{
 print(sunof())
 print(sunof(1,2,3))
 
+/******/
+var factorial = 5
+for i in 1..<5 {
+    factorial = (5 - i)*factorial
+}
+print(factorial)
+
+var factorialTwo = 5
+for var i = 1; i < 5; i++ {
+    factorialTwo = (5 - i)*factorialTwo
+}
+print(factorialTwo)
+
+/*****while***/
+var whileNumber = 2
+while whileNumber < 5 {
+    whileNumber+=1
+}
+print(whileNumber)
+
+var whileNumber2 = 2
+repeat {
+   whileNumber2 += 1
+} while whileNumber2<3
+
+print(whileNumber2)
+
+/**函数**/
+var nameAndDay = ""
+func greeet(name: String,day:String,number:Int) -> String{
+    return "hello \(name),today is\(day),\(number)"
+}
+
+
+nameAndDay = greeet("wangggang", day: "27", number: 12)
+print(nameAndDay)
+
+/****元祖****/
+func calculate(scores: [Int]) -> (min:Int ,max:Int ,sum: Int) {
+    var min = scores[0]
+    var max = scores[0]
+    var sum = 0
+    for score in scores {
+        if score > max {
+            max = score
+        }else if score < min{
+            min = score
+        }
+        sum += score
+    }
+    return (min,max,sum)
+}
+let statistics = calculate([1,5,17,6])
+print(statistics)
+print(statistics.1)
+
+/***函数作为返回类型***/
+func makeIncrementer() -> ((Int,Int) ->Int){
+    func addone(number:Int,second:Int) -> Int{
+        return number + second
+    }
+    //返回一个函数
+    return addone
+}
+var increment = makeIncrementer()
+print(increment(1,2))
+
+/*******/
+func square(a:Float) -> Float {
+    return a*a
+}
+
+func cube(a:Float) -> Float{
+    return a*a*a
+}
+
+func averageSumOfSquare(a:Float,b:Float) -> Float{
+    return (square(a) + square(b))/2
+}
+
+func averageSumOfCube(a:Float,b:Float) -> Float
+{
+    return (cube(a)+cube(b))/2
+}
+
+averageSumOfCube(2, b: 3)
+averageSumOfCube(1, b: 2)
+
+/***函数作为参数**/
+func averageSum(a:Float,b:Float,f:(Float -> Float)) -> Float{
+    return(f(a) + f(b))/2.0
+}
+averageSum(2.0, b: 3.0, f: square)
+averageSum(3.0, b: 3.0, f: cube)
+
+let 
 
 
 
