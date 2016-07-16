@@ -38,19 +38,17 @@ shoppingDic["price"] = "12"
 
 let vegeatble = "red pepper"
 
-//swith语句
 switch vegeatble {
     case "celety":
      print("aaa")
     case "celety","wat":
     print("1111")
-    case  let x where x.hasPrefix("red"):
+  case  let x where x.hasPrefix("red"):
     print("hahh")
-    default :
+default :
     print("meiyou  ")
 }
 
-//数组的遍历
 for name: Int in shoppingPrice {
         print(name)
 }
@@ -131,7 +129,6 @@ for i in 1..<5 {
 print(factorial)
 
 var factorialTwo = 5
-//递归
 for var i = 1; i < 5; i++ {
     factorialTwo = (5 - i)*factorialTwo
 }
