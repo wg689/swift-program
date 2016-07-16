@@ -353,37 +353,39 @@ print(triangle.sideLength)
 triangle.sideLength = 3.2
 print(triangle.sideLength)
 
-///**willset didset**/
-// /****willSet*didSet****/
-//class TriangleAndSquare {
-//    
-//    var triangleL: EquailateralTriangle {
-//        willSet {
-//            print("triangleL willSet")
-//            squareL.slideLength = newValue.sideLength
-//        }
-//        didSet {
-//            print("triangleL didSet")
-//        }
-//    }
-//    var squareL: Squal {
-//        willSet {
-//            print("squareL willSet")
-//            triangleL.sideLength = newValue.slideLength
-//        }
-//        didSet {
-//            print("squareL didSet")
-//        }
-//    }
-//    init(size: Double, name:String) {
-//        // 少初始化任何一个对象，都会报错
-//        // return from initializer without initializing all stored properties
-//        // 类似于 oc 的用来存储数据的 model，需要对象序列化一样
-//        squareL = Squal(sideLength: size, name: name)
-////        triangleL = EquailateralTriangle
-//    }
-//}
-//var triangleAndSquare = TriangleAndSquare(size: 5.0, name: "another shape")
+/**willset didset**/
+ /****willSet*didSet****/
+class TriangleAndSquare {
+    
+    var triangleL: EquailateralTriangle {
+        willSet {
+            print("triangleL willSet")
+            squareL.slideLength = newValue.sideLength
+        }
+        didSet {
+            print("triangleL didSet")
+        }
+    }
+    var squareL: Squal {
+        willSet {
+            print("squareL willSet")
+            triangleL.sideLength = newValue.slideLength
+        }
+        didSet {
+            print("squareL didSet")
+        }
+    }
+    init(size: Double, name:String) {
+        // 少初始化任何一个对象，都会报错
+        // return from initializer without initializing all stored properties
+        // 类似于 oc 的用来存储数据的 model，需要对象序列化一样
+        squareL = Squal(sideLength: size, name: name)
+        triangleL = EquailateralTriangle(slideLength: size, name: name)
+    }
+}
+var triangleAndSquare = TriangleAndSquare(size: 5.0, name: "another shape")
+print(triangleAndSquare.squareL.slideLength)
+print(triangleAndSquare.triangleL.sideLength)
 
 
 /*枚举**/
@@ -586,6 +588,109 @@ let threeFeet = 3.ft
 print("three feet is\(threeFeet) meters")
 
 //扩展构造器
+struct RectSize {
+    var width = 0.0
+    var height = 0.0
+}
+struct RectPoint {
+    var x = 0.0 ,y = 0.0
+}
+
+struct rect {
+    var origin = RectPoint()
+    var size = RectSize()
+}
+
+let defaultRect = rect()
+let memberwiseRect = rect(origin: RectPoint(x:0,y: 2.0), size: RectSize(width: 3.0, height: 3))
+extension rect {
+    init (center:RectPoint,size:RectSize){
+        let originX = center.x - (size.width/2)
+       let y = center.y
+        let originY = y - (size.width/2)
+        self.init(origin:RectPoint(x: originX, y: originY),size:size)
+    }
+}
+
+let newRect = rect(center: RectPoint(x: 3.0, y: 2.0), size: RectSize(width: 1.0,height: 1.0))
+print(newRect.origin)
+
+//扩展方法
+extension Int {
+    func repeatitions(task:() -> Void){
+        for _ in 0..<self {
+            task()
+        }
+    }
+}
+
+2.repeatitions{ () -> Void in
+    print("hello swift")
+}
+2.repeatitions({
+    print("hello")
+})
+3.repeatitions(){
+    print("ssss")
+}
+
+/***In-out**/
+func swapTwoInts(inout a:Int,inout _ b:Int) {
+    let tempInt = a
+    a = b
+    b = tempInt
+}
+var someInt = 3,someIntTwo = 5
+swapTwoInts(&someInt, &someIntTwo)
+print(someIntTwo)
+
+///Generics 
+func swapTwoValues<T> (inout a:T ,inout _ b:T){
+    let tempValue = a
+    a = b
+    b = tempValue
+}
+var oneGenericValue = "one"
+var twoGenericValue = "two"
+swapTwoValues(&oneGenericValue, &twoGenericValue)
+swapTwoValues(&someInt, &someIntTwo)
+print(oneGenericValue)
+print(someIntTwo)
+
+//Generics type 
+struct IntStack {
+    var items = [Int]()
+    mutating func push(item: Int){
+        items.append(item)
+    }
+    mutating func pop() -> Int {
+        return items.removeLast()
+    }
+}
+let pushItem = 5
+var intStack = IntStack()
+intStack.push(pushItem)
+
+
+struct GenericStack<T> {
+    var items = [T]()
+    mutating func push(item: T){
+        items.append(item)
+    }
+    
+    mutating func pop() -> T {
+        return items.removeLast()
+    }
+}
+
+var stackOfStrings = GenericStack<String>()
+stackOfStrings.push("uno")
+stackOfStrings.push("dos")
+stackOfStrings.push("thres")
+let popItem = stackOfStrings.pop()
+
+
+
 
 
 
