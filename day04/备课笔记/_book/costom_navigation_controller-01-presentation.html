@@ -1,0 +1,729 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Popup选项菜单 | 新浪微博开发笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./costom_navigation_controller-04-refactor.html" />
+    
+    
+    <link rel="prev" href="./costom_navigation_controller-02-costom-title-button.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="0.1.1" data-basepath="." data-revision="1453529542361">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         新浪微博笔记
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.1" data-path="costom_navigation_controller-02-costom-title-button.html">
+            
+                
+                    <a href="./costom_navigation_controller-02-costom-title-button.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                         自定义标题按钮
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="0.1.1" data-path="costom_navigation_controller-01-presentation.html">
+            
+                
+                    <a href="./costom_navigation_controller-01-presentation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.1.</b>
+                        
+                         Popup选项菜单
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.1.2" data-path="costom_navigation_controller-04-refactor.html">
+            
+                
+                    <a href="./costom_navigation_controller-04-refactor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.2.</b>
+                        
+                         抽取展现处理代码
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2" data-path="qrcode.html">
+            
+                
+                    <a href="./qrcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                         二维码
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.2.1" data-path="qrcode-01-userinterface.html">
+            
+                
+                    <a href="./qrcode-01-userinterface.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.1.</b>
+                        
+                         用户界面搭建
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2.2" data-path="qrcode-02-scan.html">
+            
+                
+                    <a href="./qrcode-02-scan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.2.</b>
+                        
+                         扫描二维码
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2.3" data-path="qrcode-03-drawlines.html">
+            
+                
+                    <a href="./qrcode-03-drawlines.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.3.</b>
+                        
+                         绘制线条
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2.4" data-path="qrcode-04-load_qrcode.html">
+            
+                
+                    <a href="./qrcode-04-load_qrcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.4.</b>
+                        
+                         生成二维码
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.3" data-path="oauth.html">
+            
+                
+                    <a href="./oauth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                         OAuth
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.3.1" data-path="oauth-01-register.html">
+            
+                
+                    <a href="./oauth-01-register.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                         注册应用程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.3.2" data-path="oauth-02-loadoauthpage.html">
+            
+                
+                    <a href="./oauth-02-loadoauthpage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.2.</b>
+                        
+                         加载授权页面
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >新浪微博开发笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_58">
+                    
+                        <h1 id="popup">Popup选项菜单</h1>
+<h2 id="">目标</h2>
+<ul>
+<li>点击标题按钮，弹出选项菜单</li>
+</ul>
+<h2 id="">说明</h2>
+<ul>
+<li>为了让功能解藕，弹出表格实际上是一个视图控制器</li>
+<li>而弹出动作可以利用 <code>UIPresentationController</code> 来实现</li>
+</ul>
+<h2 id="">功能实现</h2>
+<ul>
+<li>修改 <code>HomeTableViewController</code> 中标题按钮点击事件</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  点击标题按钮</span>
+<span class="hljs-comment">// MAKR: - 监听按钮点击</span>
+    <span class="hljs-preprocessor">@objc</span> <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">titleBtnClick</span><span class="hljs-params">(btn: HomeTitleButton)</span></span>{
+        <span class="hljs-comment">// 1.设置按钮状态</span>
+        btn.selected = !btn.selected
+
+        <span class="hljs-comment">// 2.创建Storyoard</span>
+        <span class="hljs-keyword">let</span> sb = <span class="hljs-type">UIStoryboard</span>(name: <span class="hljs-string">"FriendGroup"</span>, bundle: <span class="hljs-built_in">nil</span>)
+        <span class="hljs-keyword">let</span> vc = sb.instantiateInitialViewController()!
+
+        <span class="hljs-comment">// 3.显示菜单</span>
+        presentViewController(vc, animated: <span class="hljs-built_in">true</span>, completion: <span class="hljs-built_in">nil</span>)
+    }
+</code></pre>
+<ul>
+<li>运行测试<ul>
+<li>首页控制器View会被挡住并且移除</li>
+<li>菜单会填充整个屏幕</li>
+</ul>
+</li>
+</ul>
+<p><img src="./images/导航栏/准备完成Modal测试.png" width="320" height="578" /></p>
+<h3 id="-uipresentationcontroller--modal">使用 UIPresentationController 接管 Modal</h3>
+<h4 id="1-uipresentationcontroller">第1步：自定义 <code>UIPresentationController</code></h4>
+<ul>
+<li>新建 <code>PopoverPresentationController</code> 继承自 <code>UIPresentationController</code></li>
+<li>重写 init 函数</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PopoverPresentationController</span>: <span class="hljs-title">UIPresentationController</span> </span>{
+    <span class="hljs-comment">/**
+    实例化负责转场的控制器
+
+    :param: presentedViewController  被展现的控制器
+    :param: presentingViewController 发起转场的控制器, xocde6是nil, xocde7是野指针
+
+    :returns: 负责转场的控制器
+    */</span>
+    <span class="hljs-keyword">override</span> <span class="hljs-keyword">init</span>(presentedViewController: <span class="hljs-type">UIViewController</span>, presentingViewController: <span class="hljs-type">UIViewController</span>) {
+        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(presentedViewController: presentedViewController, presentingViewController: presentingViewController)
+    }
+}
+</code></pre>
+<h4 id="2-uiviewcontrollertransitioningdelegate">第2步：遵守 <code>UIViewControllerTransitioningDelegate</code></h4>
+<ul>
+<li>在 <code>HomeTableViewController</code> 中添加 <code>UIViewControllerTransitioningDelegate</code> 扩展</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">// MAKR: - 自定义转场代理方法</span>
+<span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">HomeTableViewController</span>: <span class="hljs-title">UIViewControllerTransitioningDelegate</span>
+</span>{
+    <span class="hljs-comment">// 返回负责转场的控制器对象</span>
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">presentationControllerForPresentedViewController</span><span class="hljs-params">(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController)</span> -&gt; <span class="hljs-title">UIPresentationController</span>?</span>{
+
+        <span class="hljs-keyword">return</span> <span class="hljs-type">PopoverPresentationController</span>(presentedViewController: presented, presentingViewController: presenting)
+    }
+}
+</code></pre>
+<h4 id="3-modal-">第3步，修改 Modal 代码</h4>
+<pre><code class="lang-swift"><span class="hljs-comment">// MAKR: - 监听按钮点击</span>
+    <span class="hljs-preprocessor">@objc</span> <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">titleBtnClick</span><span class="hljs-params">(btn: HomeTitleButton)</span></span>{
+        <span class="hljs-comment">// 1.设置按钮状态</span>
+        btn.selected = !btn.selected
+
+        <span class="hljs-comment">// 2.创建Storyoard</span>
+        <span class="hljs-keyword">let</span> sb = <span class="hljs-type">UIStoryboard</span>(name: <span class="hljs-string">"FriendGroup"</span>, bundle: <span class="hljs-built_in">nil</span>)
+        <span class="hljs-keyword">let</span> vc = sb.instantiateInitialViewController()!
+
+        <span class="hljs-comment">// 3.设置转场代理, 告诉系统谁来负责转场</span>
+        vc.transitioningDelegate = <span class="hljs-keyword">self</span>
+
+        <span class="hljs-comment">// 4.设置转场模式</span>
+        vc.modalPresentationStyle = <span class="hljs-type">UIModalPresentationStyle</span>.<span class="hljs-type">Custom</span>
+
+        <span class="hljs-comment">// 5.显示菜单</span>
+        presentViewController(vc, animated: <span class="hljs-built_in">true</span>, completion: <span class="hljs-built_in">nil</span>)
+    }
+</code></pre>
+<blockquote>
+<p>运行测试，使用视图层次结构查看前后两种 Modal 的实际运行效果</p>
+</blockquote>
+<p>结论：</p>
+<ul>
+<li>默认情况下，<code>Modal</code> 展现视图控制器会将之前的视图控制器移出</li>
+<li>而使用 <code>UIPresentationController</code> 可以同时保留两个视图控制器的视图，从而能够达到弹窗的效果</li>
+</ul>
+<blockquote>
+<p><code>UIPresentationController</code> 是 iOS 8.0 新推出的专门封装 Modal 转场动画的控制器</p>
+</blockquote>
+<ul>
+<li><code>UIPresentationController</code> 的重要概念<ul>
+<li><code>containerView</code> 容器视图</li>
+<li><code>presentedView()</code> Modal 展现的视图</li>
+<li><code>presentedViewController</code> Modal 展现的视图控制器</li>
+</ul>
+</li>
+</ul>
+<h3 id="-modal-">设置 Modal 控制器大小</h3>
+<ul>
+<li>在 <code>PopoverPresentationController</code> 中重写 <code>containerViewWillLayoutSubviews</code> 方法</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  容器视图将要布局子视图</span>
+<span class="hljs-keyword">override</span> <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">containerViewWillLayoutSubviews</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">super</span>.containerViewWillLayoutSubviews()
+
+    presentedView().frame = <span class="hljs-type">CGRectMake</span>(<span class="hljs-number">100</span>, <span class="hljs-number">56</span>, <span class="hljs-number">200</span>, <span class="hljs-number">300</span>)
+}
+</code></pre>
+<blockquote>
+<p>下一目标 —— 点击空白位置关闭视图控制器</p>
+</blockquote>
+<h3 id="">点击空白位置关闭视图控制器</h3>
+<ul>
+<li>准备遮罩视图</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">/// 遮罩视图</span>
+private lazy <span class="hljs-keyword">var</span> dummingView: <span class="hljs-type">UIView</span> = {
+    <span class="hljs-keyword">let</span> v = <span class="hljs-type">UIView</span>()
+    v.backgroundColor = <span class="hljs-type">UIColor</span>(white: <span class="hljs-number">0</span>, alpha: <span class="hljs-number">0.2</span>)
+
+    <span class="hljs-keyword">let</span> tap = <span class="hljs-type">UITapGestureRecognizer</span>(target: <span class="hljs-keyword">self</span>, action: <span class="hljs-string">"clickDummingView"</span>)
+    v.addGestureRecognizer(tap)
+
+    <span class="hljs-keyword">return</span> v
+}()
+
+<span class="hljs-comment">///  点击遮罩视图</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">clickDummingView</span><span class="hljs-params">()</span> </span>{
+    presentedViewController.dismissViewControllerAnimated(<span class="hljs-built_in">true</span>, completion: <span class="hljs-built_in">nil</span>)
+}
+</code></pre>
+<ul>
+<li>在实例化函数中准备遮罩视图</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-keyword">override</span> <span class="hljs-keyword">init</span>(presentedViewController: <span class="hljs-type">UIViewController</span>!, presentingViewController: <span class="hljs-type">UIViewController</span>!) {
+    <span class="hljs-comment">// presentedViewController 是要 Modal 展现的视图控制器</span>
+    <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(presentedViewController: presentedViewController, presentingViewController: presentingViewController)
+
+    <span class="hljs-comment">// 准备遮罩视图</span>
+    prepareDummingView()
+}
+</code></pre>
+<blockquote>
+<p><code>init</code> 的时候，<code>containerView</code> 还没有被创建</p>
+</blockquote>
+<ul>
+<li>在 <code>presentationTransitionWillBegin</code> 方法中添加遮罩视图</li>
+<li>此方法是转场开始之前被调用，此时 <code>containerView</code> 已经建立</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  转场开始之前，插入遮罩视图</span>
+<span class="hljs-keyword">override</span> <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">presentationTransitionWillBegin</span><span class="hljs-params">()</span> </span>{
+    dummingView.frame = containerView.bounds
+    containerView.insertSubview(dummingView, atIndex: <span class="hljs-number">0</span>)
+}
+</code></pre>
+<blockquote>
+<p>运行测试</p>
+</blockquote>
+<ul>
+<li>修改 <code>clickDumming()</code> 函数，关闭视图控制器</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  遮罩视图点击方法</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">clickDumming</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">println</span>(<span class="hljs-keyword">__FUNCTION__</span>)
+
+    <span class="hljs-comment">// 关闭 Modal 的控制器</span>
+    presentedViewController.dismissViewControllerAnimated(<span class="hljs-built_in">true</span>, completion: <span class="hljs-built_in">nil</span>)
+}
+</code></pre>
+<blockquote>
+<p>下一目标 —— 自定义转场动画</p>
+</blockquote>
+<h3 id="">自定义转场动画</h3>
+<ul>
+<li>在 <code>HomeTableViewController</code> 的 <code>UIViewControllerTransitioningDelegate</code> 实现以下方法，指定负责 <code>展现</code> 转场动画的对象</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  指定负责 `展现` 转场动画的对象</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">animationControllerForPresentedController</span><span class="hljs-params">(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController)</span> -&gt; <span class="hljs-title">UIViewControllerAnimatedTransitioning</span>? </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>
+}
+</code></pre>
+<ul>
+<li>实现 <code>UIViewControllerAnimatedTransitioning</code> 协议方法</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">HomeTableViewController</span>: <span class="hljs-title">UIViewControllerAnimatedTransitioning</span> </span>{
+
+    <span class="hljs-comment">///  转场动画时间</span>
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">transitionDuration</span><span class="hljs-params">(transitionContext: UIViewControllerContextTransitioning)</span> -&gt; <span class="hljs-title">NSTimeInterval</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0.5</span>
+    }
+
+    <span class="hljs-comment">///  自定义转场动画</span>
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">animateTransition</span><span class="hljs-params">(transitionContext: UIViewControllerContextTransitioning)</span> </span>{
+
+    }
+}
+</code></pre>
+<blockquote>
+<p>运行测试，通过视图层次结构可以看到，一旦实现了以上代理方法，要展现视图的出现需要程序员负责</p>
+</blockquote>
+<h4 id="">转场上下文</h4>
+<ul>
+<li><code>transitionContext</code> 定义了转场时需要的元数据，比如在转场过程中所参与的视图控制器和视图的相关属性</li>
+<li>重要属性<ul>
+<li>来源视图</li>
+<li>来源视图控制器</li>
+<li>目标视图</li>
+<li>目标视图控制器</li>
+</ul>
+</li>
+<li><p>重要方法</p>
+<ul>
+<li><code>completeTransition</code> 通知转场动画完成</li>
+</ul>
+</li>
+<li><p>自定义转场动画方法</p>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  自定义转场动画</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">animateTransition</span><span class="hljs-params">(transitionContext: UIViewControllerContextTransitioning)</span> </span>{
+
+    <span class="hljs-keyword">let</span> fromVC = transitionContext.viewControllerForKey(<span class="hljs-type">UITransitionContextFromViewControllerKey</span>)
+    <span class="hljs-keyword">let</span> fromView = fromVC?.view
+    <span class="hljs-keyword">let</span> toVC = transitionContext.viewControllerForKey(<span class="hljs-type">UITransitionContextToViewControllerKey</span>)
+
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"fromVC <span class="hljs-subst">\(fromVC)</span> toVC <span class="hljs-subst">\(toVC)</span>"</span>)
+
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> toView = toVC?.view {
+        transitionContext.containerView().addSubview(toView)
+
+        transitionContext.completeTransition(<span class="hljs-built_in">true</span>)
+    }
+}
+</code></pre>
+<blockquote>
+<p>运行测试</p>
+</blockquote>
+<h4 id="dismiss-">dismiss 动画</h4>
+<ul>
+<li>在 <code>HomeTableViewController</code> 的 <code>UIViewControllerTransitioningDelegate</code> 实现以下方法，指定负责 <code>消失</code> 转场动画的对象</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  指定负责 `消失` 转场动画的对象</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">animationControllerForDismissedController</span><span class="hljs-params">(dismissed: UIViewController)</span> -&gt; <span class="hljs-title">UIViewControllerAnimatedTransitioning</span>? </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>
+}
+</code></pre>
+<ul>
+<li>实现了此代理方法之后，同样会调用之前的 <code>animateTransition</code> 函数</li>
+<li>为了更方便地区分是<code>展现</code>还是<code>消失</code>，可以定义一个属性记录</li>
+<li>在 <code>HomeTableViewController</code> 中定义一个属性</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">// 是否展现标记</span>
+<span class="hljs-keyword">var</span> isPresenting = <span class="hljs-built_in">false</span>
+</code></pre>
+<ul>
+<li>在 <code>展现/消失</code> 代理函数中增加标记设置</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  指定负责 `展现` 转场动画的对象</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">animationControllerForPresentedController</span><span class="hljs-params">(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController)</span> -&gt; <span class="hljs-title">UIViewControllerAnimatedTransitioning</span>? </span>{
+    isPresenting = <span class="hljs-built_in">true</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>
+}
+
+<span class="hljs-comment">///  指定负责 `消失` 转场动画的对象</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">animationControllerForDismissedController</span><span class="hljs-params">(dismissed: UIViewController)</span> -&gt; <span class="hljs-title">UIViewControllerAnimatedTransitioning</span>? </span>{
+    isPresenting = <span class="hljs-built_in">false</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>
+}
+</code></pre>
+<ul>
+<li>处理动画函数</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  自定义转场动画</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">animateTransition</span><span class="hljs-params">(transitionContext: UIViewControllerContextTransitioning)</span> </span>{
+
+    <span class="hljs-keyword">if</span> isPresenting {
+        <span class="hljs-keyword">let</span> toView = transitionContext.viewForKey(<span class="hljs-type">UITransitionContextToViewKey</span>)!
+        transitionContext.containerView().addSubview(toView)
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">let</span> toView = transitionContext.viewForKey(<span class="hljs-type">UITransitionContextFromViewKey</span>)!
+        toView.removeFromSuperview()
+    }
+
+    transitionContext.completeTransition(<span class="hljs-built_in">true</span>)
+}
+</code></pre>
+<blockquote>
+<p>运行测试</p>
+</blockquote>
+<ul>
+<li>添加动画代码</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">animateTransition</span><span class="hljs-params">(transitionContext: UIViewControllerContextTransitioning)</span> </span>{
+
+    <span class="hljs-keyword">if</span> isPresented {
+        <span class="hljs-keyword">let</span> toView = transitionContext.viewForKey(<span class="hljs-type">UITransitionContextToViewKey</span>)!
+        transitionContext.containerView().addSubview(toView)
+        toView.transform = <span class="hljs-type">CGAffineTransformMakeScale</span>(<span class="hljs-number">1.0</span>, <span class="hljs-number">0</span>)
+        toView.layer.anchorPoint = <span class="hljs-type">CGPointMake</span>(<span class="hljs-number">0.5</span>, <span class="hljs-number">0</span>)
+
+        <span class="hljs-type">UIView</span>.animateWithDuration(transitionDuration(transitionContext),
+            delay: <span class="hljs-number">0</span>,
+            usingSpringWithDamping: <span class="hljs-number">0.8</span>,
+            initialSpringVelocity: <span class="hljs-number">5.0</span>,
+            options: <span class="hljs-built_in">nil</span>,
+            animations: {
+                toView.transform = <span class="hljs-type">CGAffineTransformMakeScale</span>(<span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span>)
+        }, completion: { (<span class="hljs-number">_</span>) <span class="hljs-keyword">in</span>
+            toView.transform = <span class="hljs-type">CGAffineTransformIdentity</span>
+            transitionContext.completeTransition(<span class="hljs-built_in">true</span>)
+        })
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">let</span> fromView = transitionContext.viewForKey(<span class="hljs-type">UITransitionContextFromViewKey</span>)!
+        fromView.removeFromSuperview()
+        transitionContext.completeTransition(<span class="hljs-built_in">true</span>)
+    }
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./costom_navigation_controller-02-costom-title-button.html" class="navigation navigation-prev " aria-label="Previous page: 自定义标题按钮"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./costom_navigation_controller-04-refactor.html" class="navigation navigation-next " aria-label="Next page: 抽取展现处理代码"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

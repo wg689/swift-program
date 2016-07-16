@@ -1,0 +1,630 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>代码评审(Code Review) | 新浪微博开发笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    
+    <link rel="prev" href="./visitor-07-summary.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="0.7" data-basepath="." data-revision="1453424421399">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         新浪微博笔记
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.1" data-path="oschina.html">
+            
+                
+                    <a href="./oschina.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                         项目部署
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2" data-path="null.html">
+            
+                
+                    <a href="./null.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                         空项目
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.3" data-path="imagesassets.html">
+            
+                
+                    <a href="./imagesassets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                         图片素材
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.3.1" data-path="imagesassets-01-icon_default.html">
+            
+                
+                    <a href="./imagesassets-01-icon_default.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                         图标&amp;启动图片
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.4" data-path="log.html">
+            
+                
+                    <a href="./log.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                         自定义LOG
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5" data-path="createproject.html">
+            
+                
+                    <a href="./createproject.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                         项目搭建
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.5.1" data-path="storyboard_reference.html">
+            
+                
+                    <a href="./storyboard_reference.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                         StoryBoard Reference
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.2" data-path="createproject-01-createfiles.html">
+            
+                
+                    <a href="./createproject-01-createfiles.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                         创建文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.3" data-path="createproject-02-addchildcontrollers.html">
+            
+                
+                    <a href="./createproject-02-addchildcontrollers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                         添加子控制器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.4" data-path="namespace.html">
+            
+                
+                    <a href="./namespace.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.4.</b>
+                        
+                         代码动态创建类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.5" data-path="createproject-03-costommaintabbar.html">
+            
+                
+                    <a href="./createproject-03-costommaintabbar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.5.</b>
+                        
+                         添加加号按钮
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6" data-path="visitor.html">
+            
+                
+                    <a href="./visitor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                         未登录页面处理
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.6.1" data-path="visitor-01-basetableviewcontroller.html">
+            
+                
+                    <a href="./visitor-01-basetableviewcontroller.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                         表格视图控制器基类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.2" data-path="visitor-02-userloginview.html">
+            
+                
+                    <a href="./visitor-02-userloginview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                         用户登录视图
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.3" data-path="visitor-03-loginlogic.html">
+            
+                
+                    <a href="./visitor-03-loginlogic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                         设置未登录信息
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.4" data-path="visitor-04-homeanimation.html">
+            
+                
+                    <a href="./visitor-04-homeanimation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                         首页动画
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.5" data-path="visitor-05-logindelegate.html">
+            
+                
+                    <a href="./visitor-05-logindelegate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                         登录&amp;注册代理回调
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.6" data-path="visitor-06-setupappearance.html">
+            
+                
+                    <a href="./visitor-06-setupappearance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.6.</b>
+                        
+                         设置全局外观
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.7" data-path="visitor-07-summary.html">
+            
+                
+                    <a href="./visitor-07-summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.7.</b>
+                        
+                         阶段性小结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="0.7" data-path="code_review.html">
+            
+                
+                    <a href="./code_review.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                         代码评审(Code Review)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >新浪微博开发笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_10">
+                    
+                        <h1 id="code-review">代码评审(Code Review)</h1>
+<blockquote>
+<p>通常在企业开发中，会定期<code>面对面</code>(face to face)对代码进行评审</p>
+</blockquote>
+<h2 id="code-review">Code Review的意识</h2>
+<ul>
+<li>作为一个 <code>Developer</code>，不仅要<code>提交可工作的代码</code>(Deliver working code)，更要<code>提交可维护的代码</code>(Deliver maintainable code)</li>
+<li>必要时进行重构，随着项目的迭代，在计划新增功能的同时，开发要主动计划重构的工作项</li>
+<li>开放的心态，虚心接受大家的<code>评审建议</code>(Review Comments)</li>
+</ul>
+<h3 id="">代码评审的方式</h3>
+<ul>
+<li>开 Code Review 会议</li>
+<li>团队内部会整理 Check List</li>
+<li>团队内部成员交换代码</li>
+<li>找出可优化方案</li>
+<li>多问问题，例如：“这块儿是怎么工作的？”、“如果有XXX 情况，你这个怎么处理？”</li>
+<li>区分重点，优先抓住<code>设计</code>，<code>可读性</code>，<code>健壮性</code>等重点问题</li>
+<li>整理好的编码实践，用来作为 <code>Code Review</code> 的参考</li>
+</ul>
+<h2 id="">评审内容</h2>
+<h3 id="">架构/设计</h3>
+<ul>
+<li>单一职责原则<ul>
+<li>这是经常被违背的原则。一个类只能干一个事情，一个方法最好也只干一件事情。比较常见的违背是<code>一个类既干UI的事情，又干逻辑的事情</code>，这个在低质量的客户端代码里很常见</li>
+</ul>
+</li>
+<li>行为是否统一，例如：<ul>
+<li>缓存是否统一</li>
+<li>错误处理是否统一</li>
+<li>错误提示是否统一</li>
+<li>弹出框是否统一</li>
+<li>……</li>
+</ul>
+</li>
+<li>代码污染<ul>
+<li>代码有没有对其他模块强耦合</li>
+</ul>
+</li>
+<li>重复代码</li>
+<li>开闭原则</li>
+<li>面向接口编程</li>
+<li>健壮性<ul>
+<li>是否考虑线程安全</li>
+<li>数据访问是否一致性</li>
+<li>边界处理是否完整</li>
+<li>逻辑是否健壮</li>
+<li>是否有内存泄漏</li>
+<li>有没有循环依赖</li>
+<li>有没有野指针</li>
+<li>……</li>
+</ul>
+</li>
+<li>错误处理</li>
+<li>改动是不是对代码的提升<ul>
+<li>新的改动是打补丁，让代码质量继续恶化，还是对代码质量做了修复</li>
+</ul>
+</li>
+<li>效率/性能<ul>
+<li>关键算法的时间复杂度多少？有没有可能有潜在的性能瓶颈</li>
+<li>客户端程序对频繁消息和较大数据等耗时操作是否处理得当</li>
+</ul>
+</li>
+</ul>
+<h3 id="">代码风格</h3>
+<ul>
+<li>可读性<ul>
+<li>衡量可读性的可以有很好实践的标准，就是 Reviewer 能否非常容易的理解这个代码。如果不是，那意味着代码的可读性要进行改进</li>
+</ul>
+</li>
+<li>命名<ul>
+<li>命名对可读性非常重要</li>
+<li>英语用词尽量准确一点，必要时可以查字典</li>
+</ul>
+</li>
+<li>函数长度/类长度<ul>
+<li>函数太长的不好阅读</li>
+<li>类太长了，检查是否违反的 <code>单一职责</code> 原则</li>
+</ul>
+</li>
+<li>注释<ul>
+<li>恰到好处的注释</li>
+</ul>
+</li>
+<li>参数个数<ul>
+<li>不要太多，一般不要超过 3 个</li>
+</ul>
+</li>
+</ul>
+<h3 id="review-your-own-code-first">Review Your Own Code First</h3>
+<ul>
+<li>每次提交前整体把自己的代码过一遍非常有帮助，尤其是看看有没有犯低级错误</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./visitor-07-summary.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 阶段性小结"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>代码动态创建类 | 新浪微博开发笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./createproject-03-costommaintabbar.html" />
+    
+    
+    <link rel="prev" href="./createproject-02-addchildcontrollers.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="0.5.4" data-basepath="." data-revision="1453424421399">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         新浪微博笔记
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.1" data-path="oschina.html">
+            
+                
+                    <a href="./oschina.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                         项目部署
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2" data-path="null.html">
+            
+                
+                    <a href="./null.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                         空项目
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.3" data-path="imagesassets.html">
+            
+                
+                    <a href="./imagesassets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                         图片素材
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.3.1" data-path="imagesassets-01-icon_default.html">
+            
+                
+                    <a href="./imagesassets-01-icon_default.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                         图标&amp;启动图片
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.4" data-path="log.html">
+            
+                
+                    <a href="./log.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                         自定义LOG
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5" data-path="createproject.html">
+            
+                
+                    <a href="./createproject.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                         项目搭建
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.5.1" data-path="storyboard_reference.html">
+            
+                
+                    <a href="./storyboard_reference.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                         StoryBoard Reference
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.2" data-path="createproject-01-createfiles.html">
+            
+                
+                    <a href="./createproject-01-createfiles.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                         创建文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.3" data-path="createproject-02-addchildcontrollers.html">
+            
+                
+                    <a href="./createproject-02-addchildcontrollers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                         添加子控制器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="0.5.4" data-path="namespace.html">
+            
+                
+                    <a href="./namespace.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.4.</b>
+                        
+                         代码动态创建类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.5" data-path="createproject-03-costommaintabbar.html">
+            
+                
+                    <a href="./createproject-03-costommaintabbar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.5.</b>
+                        
+                         添加加号按钮
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6" data-path="visitor.html">
+            
+                
+                    <a href="./visitor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                         未登录页面处理
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.6.1" data-path="visitor-01-basetableviewcontroller.html">
+            
+                
+                    <a href="./visitor-01-basetableviewcontroller.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                         表格视图控制器基类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.2" data-path="visitor-02-userloginview.html">
+            
+                
+                    <a href="./visitor-02-userloginview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                         用户登录视图
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.3" data-path="visitor-03-loginlogic.html">
+            
+                
+                    <a href="./visitor-03-loginlogic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                         设置未登录信息
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.4" data-path="visitor-04-homeanimation.html">
+            
+                
+                    <a href="./visitor-04-homeanimation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                         首页动画
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.5" data-path="visitor-05-logindelegate.html">
+            
+                
+                    <a href="./visitor-05-logindelegate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                         登录&amp;注册代理回调
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.6" data-path="visitor-06-setupappearance.html">
+            
+                
+                    <a href="./visitor-06-setupappearance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.6.</b>
+                        
+                         设置全局外观
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.7" data-path="visitor-07-summary.html">
+            
+                
+                    <a href="./visitor-07-summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.7.</b>
+                        
+                         阶段性小结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.7" data-path="code_review.html">
+            
+                
+                    <a href="./code_review.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                         代码评审(Code Review)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >新浪微博开发笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_6">
+                    
+                        <h3 id="">用代码动态创建类</h3>
+<ul>
+<li>跟踪 <code>类</code> 名称</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-built_in">print</span>(vc)
+</code></pre>
+<ul>
+<li><p>小结</p>
+<ul>
+<li>在 swift 中，类名的组成格式是 <code>namespace.类名</code></li>
+<li>namespace 对应的是 <code>Product Name</code></li>
+</ul>
+</li>
+<li><p>从 <code>mainBundle</code> 的 <code>infoDictionary</code> 获取命名空间名称</p>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-built_in">print</span>(<span class="hljs-type">NSBundle</span>.mainBundle().infoDictionary)
+
+<span class="hljs-keyword">let</span> namespace = <span class="hljs-type">NSBundle</span>.mainBundle().infoDictionary![<span class="hljs-string">"CFBundleExecutable"</span>] <span class="hljs-keyword">as</span>! <span class="hljs-type">String</span>
+</code></pre>
+<ul>
+<li>Tips<ul>
+<li>在 swift 中，类名是包含命名空间的</li>
+<li>命名空间默认是项目名称，同一个命名空间全局共享</li>
+<li>如果新建项目时，项目名称中包含有中文，可以按照下图修改</li>
+<li><img src="images/未登录界面截图/命名空间.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>Objective-C 一个一直以来令人诟病的地方就是没有命名空间，在应用开发时，所有的代码和引用的静态库最终都会被编译到同一个域和二进制中。这样的后果是一旦我们有重复的类名的话，就会导致编译时的冲突和失败</p>
+</li>
+<li><p>为了避免这种事情的发生，Objective-C 的类型一般都会加上两到三个字母的前缀，比如 Apple 保留的 NS 和 UI 前缀</p>
+</li>
+<li><p>这种做法可以解决部分问题，至少我们在直接引用不同人的库时冲突的概率大大降低了，但是前缀并不意味着不会冲突，有时候我们确实还是会遇到即使使用前缀也仍然相同的情况</p>
+</li>
+<li><p>在 Swift 中，由于可以使用命名空间了，即使是名字相同的类型，只要是来自不同的命名空间的话，都是可以和平共处的</p>
+</li>
+<li><p>Tips</p>
+<ul>
+<li>使用类型嵌套的方法来指定访问的范围, 也可以解决以上问题</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>调整创建控制器代码，根据类名动态创建类</li>
+</ul>
+<pre><code class="lang-swift">        <span class="hljs-comment">// 0.动态获取命名空间</span>
+        <span class="hljs-keyword">let</span> namespace = <span class="hljs-type">NSBundle</span>.mainBundle().infoDictionary![<span class="hljs-string">"CFBundleExecutable"</span>] <span class="hljs-keyword">as</span>! <span class="hljs-type">String</span>
+
+        <span class="hljs-comment">// 1.拼接命名空间并生成Class</span>
+        <span class="hljs-comment">// 在Swift中, 如果想通过一个字符串创建一个类, 那么该类名必须包含命名空间名称</span>
+        guard <span class="hljs-keyword">let</span> cls:<span class="hljs-type">AnyClass</span> = <span class="hljs-type">NSClassFromString</span>(namespace + <span class="hljs-string">"."</span> + childControllerName) <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span>
+        }
+
+        <span class="hljs-comment">// 2.告诉编译器真实类型是UIViewController</span>
+        <span class="hljs-comment">// 在Swift中如果向通过一个AnyClass来创建一个对象, 必须先明确这个类的类型</span>
+        <span class="hljs-comment">// 通过 AnyObject.Type 这种方式所得到是一个类的类型</span>
+        <span class="hljs-keyword">let</span> vcCls = cls <span class="hljs-keyword">as</span>! <span class="hljs-type">UIViewController</span>.<span class="hljs-type">Type</span>
+        <span class="hljs-comment">// 3.实例化控制器</span>
+        <span class="hljs-keyword">let</span> childController = vcCls.<span class="hljs-keyword">init</span>()
+</code></pre>
+<h1 id="">元类型</h1>
+<ul>
+<li>AnyClass是一个元类型
+  <code>typealias AnyClass = AnyObject.Type</code></li>
+<li><p>通过 AnyObject.Type 这种方式所得到是一个元类型</p>
+</li>
+<li><p>在类型的名称后面加上 .Type，比如 A.Type 代表的是 A 这个类型的类型</p>
+</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+
+}
+<span class="hljs-keyword">let</span> typeA: <span class="hljs-type">A</span>.<span class="hljs-type">Type</span> = <span class="hljs-type">A</span>.<span class="hljs-keyword">self</span>
+</code></pre>
+<ul>
+<li>而在从 A 中取出其类型时，我们需要使用到 .self</li>
+<li>self 可以用在类型后面取得类型本身，也可以用在某个实例后面取得这个实例本身</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+    <span class="hljs-keyword">class</span> <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">method</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Hello"</span>)
+    }
+}
+
+<span class="hljs-keyword">let</span> typeA: <span class="hljs-type">A</span>.<span class="hljs-type">Type</span> = <span class="hljs-type">A</span>.<span class="hljs-keyword">self</span>
+typeA.method()
+</code></pre>
+<hr>
+<h1 id="">异常处理</h1>
+<pre><code>* 以前NSError 的使用方式其实变相在鼓励开发者忽略错误, 例如大部分程序猿在开发时候都喜欢忽略错误
+* 例如`writeToFile`方法在绝大多数情况下，这个方法并不会发生什么错误，而很多工程师也为了省事和简单，会将输入的 error 设为 nil
+* 但是事实上这个 API 调用是会出错的，比如设备的磁盘空间满了的时候，写入将会失败。但是当这个错误出现并让你的 app 陷入难堪境地的时候，你几乎无从下手进行调试 -- 因为系统曾经尝试过通知你出现了错误，但是你却选择视而不见。
+</code></pre><pre><code class="lang-objc">[data writeToFile: path options: options error: <span class="hljs-literal">nil</span>];
+</code></pre>
+<p>+</p>
+<pre><code>* 为了避免这个问题,  Swift 2.0 中，Apple 为这么语言引入了异常机制。现在，这类带有 NSError 指针作为参数的 API 都被改为了可以抛出异常的形式。比如 writeToFile:options:error:
+* 如果你不使用 try 的话，是无法调用 writeToFile: 方法的，它会产生一个编译错误，这让我们无法有意无意地忽视掉这些错误
+</code></pre><pre><code class="lang-swift"><span class="hljs-keyword">do</span> {
+    try d.writeToFile(<span class="hljs-string">"Hello"</span>, options: [])
+} catch <span class="hljs-keyword">let</span> error <span class="hljs-keyword">as</span> <span class="hljs-type">NSError</span> {
+    <span class="hljs-built_in">print</span> (<span class="hljs-string">"Error: <span class="hljs-subst">\(error.domain)</span>"</span>)
+}
+</code></pre>
+<h1 id="trytrytry">try/try?/try!</h1>
+<ul>
+<li>try :<ul>
+<li>正常处理异常, 一旦有异常就执行catch</li>
+</ul>
+</li>
+<li>try!:<ul>
+<li>强制处理异常(忽略异常),也就是说告诉系统一定不会发生异常, 如果真的发生了异常, 那么程序会崩溃</li>
+</ul>
+</li>
+<li>try?:<ul>
+<li>忽略异常, 告诉系统可能有异常也可能没有异常, 如果发生异常返回值就是nil, 如果没有发生异常, 会将返回值包装为一个可选类型的值</li>
+</ul>
+</li>
+<li>开发中推举使用try? 和 try , 不推荐使用try!</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./createproject-02-addchildcontrollers.html" class="navigation navigation-prev " aria-label="Previous page: 添加子控制器"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./createproject-03-costommaintabbar.html" class="navigation navigation-next " aria-label="Next page: 添加加号按钮"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

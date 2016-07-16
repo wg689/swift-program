@@ -1,0 +1,10 @@
+PODS:
+  - QorumLogs (0.4)
+
+DEPENDENCIES:
+  - QorumLogs
+
+SPEC CHECKSUMS:
+  QorumLogs: 63d7bd4a3f59fa5f7afedafa3ab9202b065c6466
+
+COCOAPODS: 0.38.2

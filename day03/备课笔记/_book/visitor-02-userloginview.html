@@ -1,0 +1,721 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>用户登录视图 | 新浪微博开发笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./visitor-03-loginlogic.html" />
+    
+    
+    <link rel="prev" href="./visitor-01-basetableviewcontroller.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="0.6.2" data-basepath="." data-revision="1453424421399">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         新浪微博笔记
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.1" data-path="oschina.html">
+            
+                
+                    <a href="./oschina.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                         项目部署
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2" data-path="null.html">
+            
+                
+                    <a href="./null.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                         空项目
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.3" data-path="imagesassets.html">
+            
+                
+                    <a href="./imagesassets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                         图片素材
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.3.1" data-path="imagesassets-01-icon_default.html">
+            
+                
+                    <a href="./imagesassets-01-icon_default.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                         图标&amp;启动图片
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.4" data-path="log.html">
+            
+                
+                    <a href="./log.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                         自定义LOG
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5" data-path="createproject.html">
+            
+                
+                    <a href="./createproject.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                         项目搭建
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.5.1" data-path="storyboard_reference.html">
+            
+                
+                    <a href="./storyboard_reference.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                         StoryBoard Reference
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.2" data-path="createproject-01-createfiles.html">
+            
+                
+                    <a href="./createproject-01-createfiles.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                         创建文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.3" data-path="createproject-02-addchildcontrollers.html">
+            
+                
+                    <a href="./createproject-02-addchildcontrollers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                         添加子控制器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.4" data-path="namespace.html">
+            
+                
+                    <a href="./namespace.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.4.</b>
+                        
+                         代码动态创建类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.5" data-path="createproject-03-costommaintabbar.html">
+            
+                
+                    <a href="./createproject-03-costommaintabbar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.5.</b>
+                        
+                         添加加号按钮
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6" data-path="visitor.html">
+            
+                
+                    <a href="./visitor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                         未登录页面处理
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.6.1" data-path="visitor-01-basetableviewcontroller.html">
+            
+                
+                    <a href="./visitor-01-basetableviewcontroller.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                         表格视图控制器基类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="0.6.2" data-path="visitor-02-userloginview.html">
+            
+                
+                    <a href="./visitor-02-userloginview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                         用户登录视图
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.3" data-path="visitor-03-loginlogic.html">
+            
+                
+                    <a href="./visitor-03-loginlogic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                         设置未登录信息
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.4" data-path="visitor-04-homeanimation.html">
+            
+                
+                    <a href="./visitor-04-homeanimation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                         首页动画
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.5" data-path="visitor-05-logindelegate.html">
+            
+                
+                    <a href="./visitor-05-logindelegate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                         登录&amp;注册代理回调
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.6" data-path="visitor-06-setupappearance.html">
+            
+                
+                    <a href="./visitor-06-setupappearance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.6.</b>
+                        
+                         设置全局外观
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.7" data-path="visitor-07-summary.html">
+            
+                
+                    <a href="./visitor-07-summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.7.</b>
+                        
+                         阶段性小结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.7" data-path="code_review.html">
+            
+                
+                    <a href="./code_review.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                         代码评审(Code Review)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >新浪微博开发笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_35">
+                    
+                        <h1 id="">用户登录视图</h1>
+<blockquote>
+<p>对于第三方开发者，新浪没有开放未登录访问数据的权限，因此在用户登录之前，无法 <code>加载微博数据</code> 以及 <code>关注用户</code></p>
+</blockquote>
+<h2 id="">功能需求</h2>
+<ul>
+<li>用户登录操作视图，用于在用户没有登录时替换表格控制器的根视图</li>
+<li>每个功能模块的登录视图包含以下四个控件<ul>
+<li>模块图标</li>
+<li>描述文字</li>
+<li>注册按钮</li>
+<li>登录按钮</li>
+</ul>
+</li>
+<li>特例<ul>
+<li>首页有一个小的转轮图片会不停旋转</li>
+</ul>
+</li>
+</ul>
+<h2 id="">功能实现</h2>
+<ul>
+<li>拖拽相关图片素材</li>
+<li>新建 <code>VisitorLoginView.swift</code> 继承自 <code>UIView</code></li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  访客登录视图</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VisitorLoginView</span>: <span class="hljs-title">UIView</span> </span>{
+
+    <span class="hljs-keyword">override</span> <span class="hljs-keyword">init</span>(frame: <span class="hljs-type">CGRect</span>) {
+        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(frame: frame)
+
+        backgroundColor = <span class="hljs-type">UIColor</span>.redColor()
+    }
+
+    required <span class="hljs-keyword">init</span>(coder aDecoder: <span class="hljs-type">NSCoder</span>) {
+        fatalError(<span class="hljs-string">"init(coder:) has not been implemented"</span>)
+    }
+}
+</code></pre>
+<ul>
+<li>修改 <code>setupVisitorView</code> 函数</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">// 替换根视图</span>
+view = <span class="hljs-type">VisitorLoginView</span>()
+</code></pre>
+<ul>
+<li>添加界面元素</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-comment">///  设置 UI 控件</span>
+private <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">setupUI</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">// 1. 添加控件</span>
+        addSubview(iconView)
+        addSubview(homeIconView)
+        addSubview(messageLabel)
+        addSubview(registerButton)
+        addSubview(loginButton)
+    }
+
+<span class="hljs-comment">// MARK: - 界面元素懒加载</span>
+    <span class="hljs-comment">/// 背景图标</span>
+    private lazy <span class="hljs-keyword">var</span> iconView: <span class="hljs-type">UIImageView</span> = {
+        <span class="hljs-keyword">let</span> iv = <span class="hljs-type">UIImageView</span>(image: <span class="hljs-type">UIImage</span>(named: <span class="hljs-string">"visitordiscover_feed_image_smallicon"</span>))
+        <span class="hljs-keyword">return</span> iv
+        }()
+
+    <span class="hljs-comment">/// 小房子</span>
+    private lazy <span class="hljs-keyword">var</span> homeIconView: <span class="hljs-type">UIImageView</span> = {
+        <span class="hljs-keyword">let</span> iv = <span class="hljs-type">UIImageView</span>(image: <span class="hljs-type">UIImage</span>(named: <span class="hljs-string">"visitordiscover_feed_image_house"</span>))
+        <span class="hljs-keyword">return</span> iv
+        }()
+
+    <span class="hljs-comment">/// 消息文字</span>
+    private lazy <span class="hljs-keyword">var</span> messageLabel: <span class="hljs-type">UILabel</span> = {
+        <span class="hljs-keyword">let</span> label = <span class="hljs-type">UILabel</span>()
+        label.text = <span class="hljs-string">"关注一些人，回这里看看有什么惊喜"</span>
+        <span class="hljs-keyword">return</span> label
+        }()
+
+    <span class="hljs-comment">/// 注册按钮</span>
+    private lazy <span class="hljs-keyword">var</span> registerButton: <span class="hljs-type">UIButton</span> = {
+        <span class="hljs-keyword">let</span> btn = <span class="hljs-type">UIButton</span>()
+        btn.setTitle(<span class="hljs-string">"注册"</span>, forState: <span class="hljs-type">UIControlState</span>.<span class="hljs-type">Normal</span>)
+        <span class="hljs-keyword">return</span> btn
+        }()
+
+    <span class="hljs-comment">/// 登录按钮</span>
+    private lazy <span class="hljs-keyword">var</span> loginButton: <span class="hljs-type">UIButton</span> = {
+        <span class="hljs-keyword">let</span> btn = <span class="hljs-type">UIButton</span>()
+        btn.setTitle(<span class="hljs-string">"登录"</span>, forState: <span class="hljs-type">UIControlState</span>.<span class="hljs-type">Normal</span>)
+        <span class="hljs-keyword">return</span> btn
+        }()
+</code></pre>
+<ul>
+<li>设置自动布局</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-comment">// 设置布局</span>
+        <span class="hljs-comment">// 2.1背景图标</span>
+        iconView.xmg_AlignInner(type: <span class="hljs-type">XMG_AlignType</span>.<span class="hljs-type">Center</span>, referView: <span class="hljs-keyword">self</span>, size: <span class="hljs-built_in">nil</span>)
+
+        <span class="hljs-comment">// 2.3小房子</span>
+        homeIconView.xmg_AlignInner(type: <span class="hljs-type">XMG_AlignType</span>.<span class="hljs-type">Center</span>, referView: <span class="hljs-keyword">self</span>, size: <span class="hljs-built_in">nil</span>)
+        <span class="hljs-comment">// 2.4消息文字</span>
+        messageLabel.xmg_AlignVertical(type: <span class="hljs-type">XMG_AlignType</span>.<span class="hljs-type">BottomCenter</span>, referView: iconView, size: <span class="hljs-built_in">nil</span>)
+        addConstraint(<span class="hljs-type">NSLayoutConstraint</span>(item: messageLabel, attribute: <span class="hljs-type">NSLayoutAttribute</span>.<span class="hljs-type">Width</span>, relatedBy: <span class="hljs-type">NSLayoutRelation</span>.<span class="hljs-type">Equal</span>, toItem: <span class="hljs-built_in">nil</span>, attribute: <span class="hljs-type">NSLayoutAttribute</span>.<span class="hljs-type">NotAnAttribute</span>, multiplier: <span class="hljs-number">1.0</span>, constant: <span class="hljs-number">224</span>))
+        <span class="hljs-comment">// 2.5注册按钮</span>
+        registerButton.xmg_AlignVertical(type: <span class="hljs-type">XMG_AlignType</span>.<span class="hljs-type">BottomLeft</span>, referView: messageLabel, size: <span class="hljs-type">CGSize</span>(width: <span class="hljs-number">100</span>, height: <span class="hljs-number">35</span>), offset: <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">0</span>, y: <span class="hljs-number">20</span>))
+        <span class="hljs-comment">// 2.6登录按钮</span>
+        loginButton.xmg_AlignVertical(type: <span class="hljs-type">XMG_AlignType</span>.<span class="hljs-type">BottomRight</span>, referView: messageLabel, size: <span class="hljs-type">CGSize</span>(width: <span class="hljs-number">100</span>, height: <span class="hljs-number">35</span>), offset: <span class="hljs-type">CGPoint</span>(x: <span class="hljs-number">0</span>, y: <span class="hljs-number">20</span>))
+</code></pre>
+<ul>
+<li>懒加载方法补全</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-comment">/// 背景图标</span>
+    private lazy <span class="hljs-keyword">var</span> iconView: <span class="hljs-type">UIImageView</span> = {
+        <span class="hljs-keyword">let</span> iv = <span class="hljs-type">UIImageView</span>(image: <span class="hljs-type">UIImage</span>(named: <span class="hljs-string">"visitordiscover_feed_image_smallicon"</span>))
+        <span class="hljs-keyword">return</span> iv
+        }()
+
+    <span class="hljs-comment">/// 小房子</span>
+    private lazy <span class="hljs-keyword">var</span> homeIconView: <span class="hljs-type">UIImageView</span> = {
+        <span class="hljs-keyword">let</span> iv = <span class="hljs-type">UIImageView</span>(image: <span class="hljs-type">UIImage</span>(named: <span class="hljs-string">"visitordiscover_feed_image_house"</span>))
+        <span class="hljs-keyword">return</span> iv
+        }()
+
+    <span class="hljs-comment">/// 消息文字</span>
+    private lazy <span class="hljs-keyword">var</span> messageLabel: <span class="hljs-type">UILabel</span> = {
+        <span class="hljs-keyword">let</span> label = <span class="hljs-type">UILabel</span>()
+        label.text = <span class="hljs-string">"关注一些人，回这里看看有什么惊喜"</span>
+        label.textColor = <span class="hljs-type">UIColor</span>.darkGrayColor()
+        label.font = <span class="hljs-type">UIFont</span>.systemFontOfSize(<span class="hljs-number">14</span>)
+        label.numberOfLines = <span class="hljs-number">0</span>
+        label.sizeToFit()
+        <span class="hljs-keyword">return</span> label
+        }()
+
+    <span class="hljs-comment">/// 注册按钮</span>
+    private lazy <span class="hljs-keyword">var</span> registerButton: <span class="hljs-type">UIButton</span> = {
+        <span class="hljs-keyword">let</span> btn = <span class="hljs-type">UIButton</span>()
+        btn.setTitle(<span class="hljs-string">"注册"</span>, forState: <span class="hljs-type">UIControlState</span>.<span class="hljs-type">Normal</span>)
+        btn.setBackgroundImage(<span class="hljs-type">UIImage</span>(named: <span class="hljs-string">"common_button_white_disable"</span>), forState: <span class="hljs-type">UIControlState</span>.<span class="hljs-type">Normal</span>)
+        btn.setTitleColor(<span class="hljs-type">UIColor</span>.orangeColor(), forState: <span class="hljs-type">UIControlState</span>.<span class="hljs-type">Normal</span>)
+        <span class="hljs-keyword">return</span> btn
+        }()
+
+    <span class="hljs-comment">/// 登录按钮</span>
+    private lazy <span class="hljs-keyword">var</span> loginButton: <span class="hljs-type">UIButton</span> = {
+        <span class="hljs-keyword">let</span> btn = <span class="hljs-type">UIButton</span>()
+        btn.setTitle(<span class="hljs-string">"登录"</span>, forState: <span class="hljs-type">UIControlState</span>.<span class="hljs-type">Normal</span>)
+        btn.setBackgroundImage(<span class="hljs-type">UIImage</span>(named: <span class="hljs-string">"common_button_white_disable"</span>), forState: <span class="hljs-type">UIControlState</span>.<span class="hljs-type">Normal</span>)
+        btn.setTitleColor(<span class="hljs-type">UIColor</span>.orangeColor(), forState: <span class="hljs-type">UIControlState</span>.<span class="hljs-type">Normal</span>)
+        <span class="hljs-keyword">return</span> btn
+        }()
+</code></pre>
+<ul>
+<li><p>按钮图片切片</p>
+</li>
+<li><p>添加遮罩图片</p>
+</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-comment">/// 遮罩图片</span>
+    <span class="hljs-comment">// 注意系统有一个叫做maskView的属性, 属性名称不能叫做maskView</span>
+    private lazy <span class="hljs-keyword">var</span> maskIconView: <span class="hljs-type">UIImageView</span> = {
+        <span class="hljs-keyword">let</span> iv = <span class="hljs-type">UIImageView</span>(image: <span class="hljs-type">UIImage</span>(named: <span class="hljs-string">"visitordiscover_feed_mask_smallicon"</span>))
+
+        <span class="hljs-keyword">return</span> iv
+        }()
+</code></pre>
+<ul>
+<li>遮罩图片自动布局</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-comment">// 2.2遮罩</span>
+    maskIconView.xmg_Fill(<span class="hljs-keyword">self</span>)
+</code></pre>
+<ul>
+<li>视图背景颜色</li>
+</ul>
+<pre><code class="lang-swift">backgroundColor = <span class="hljs-type">UIColor</span>(white: <span class="hljs-number">237.0</span> / <span class="hljs-number">255.0</span>, alpha: <span class="hljs-number">1.0</span>)
+</code></pre>
+<blockquote>
+<p>运行测试</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./visitor-01-basetableviewcontroller.html" class="navigation navigation-prev " aria-label="Previous page: 表格视图控制器基类"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./visitor-03-loginlogic.html" class="navigation navigation-next " aria-label="Next page: 设置未登录信息"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

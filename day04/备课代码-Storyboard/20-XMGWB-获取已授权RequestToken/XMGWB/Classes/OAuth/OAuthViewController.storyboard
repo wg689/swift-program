@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1E-Sa-c6e">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="hQQ-Mp-VLs">
+            <objects>
+                <viewController id="m1E-Sa-c6e" customClass="OAuthViewController" customModule="XMGWB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NbG-dT-vM7"/>
+                        <viewControllerLayoutGuide type="bottom" id="awr-IT-09O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HVI-dX-E2A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pf6-ZR-bJI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="m1E-Sa-c6e" id="Wob-Mf-aml"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pf6-ZR-bJI" firstAttribute="leading" secondItem="HVI-dX-E2A" secondAttribute="leading" id="8GP-rj-xYx"/>
+                            <constraint firstAttribute="trailing" secondItem="Pf6-ZR-bJI" secondAttribute="trailing" id="Cis-IR-uKJ"/>
+                            <constraint firstItem="awr-IT-09O" firstAttribute="top" secondItem="Pf6-ZR-bJI" secondAttribute="bottom" id="GXm-k0-rnq"/>
+                            <constraint firstItem="Pf6-ZR-bJI" firstAttribute="top" secondItem="HVI-dX-E2A" secondAttribute="top" id="wey-ML-zbV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Pf6-ZR-bJI" id="AD5-Hg-86W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S7C-ad-KD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="633"/>
+        </scene>
+    </scenes>
+</document>

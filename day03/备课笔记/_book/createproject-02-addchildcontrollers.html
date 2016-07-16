@@ -1,0 +1,611 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>添加子控制器 | 新浪微博开发笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./namespace.html" />
+    
+    
+    <link rel="prev" href="./createproject-01-createfiles.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="0.5.3" data-basepath="." data-revision="1453424421399">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         新浪微博笔记
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.1" data-path="oschina.html">
+            
+                
+                    <a href="./oschina.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                         项目部署
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2" data-path="null.html">
+            
+                
+                    <a href="./null.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                         空项目
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.3" data-path="imagesassets.html">
+            
+                
+                    <a href="./imagesassets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                         图片素材
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.3.1" data-path="imagesassets-01-icon_default.html">
+            
+                
+                    <a href="./imagesassets-01-icon_default.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                         图标&amp;启动图片
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.4" data-path="log.html">
+            
+                
+                    <a href="./log.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                         自定义LOG
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5" data-path="createproject.html">
+            
+                
+                    <a href="./createproject.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                         项目搭建
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.5.1" data-path="storyboard_reference.html">
+            
+                
+                    <a href="./storyboard_reference.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                         StoryBoard Reference
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.2" data-path="createproject-01-createfiles.html">
+            
+                
+                    <a href="./createproject-01-createfiles.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                         创建文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="0.5.3" data-path="createproject-02-addchildcontrollers.html">
+            
+                
+                    <a href="./createproject-02-addchildcontrollers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                         添加子控制器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.4" data-path="namespace.html">
+            
+                
+                    <a href="./namespace.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.4.</b>
+                        
+                         代码动态创建类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.5.5" data-path="createproject-03-costommaintabbar.html">
+            
+                
+                    <a href="./createproject-03-costommaintabbar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.5.</b>
+                        
+                         添加加号按钮
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6" data-path="visitor.html">
+            
+                
+                    <a href="./visitor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                         未登录页面处理
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="0.6.1" data-path="visitor-01-basetableviewcontroller.html">
+            
+                
+                    <a href="./visitor-01-basetableviewcontroller.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                         表格视图控制器基类
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.2" data-path="visitor-02-userloginview.html">
+            
+                
+                    <a href="./visitor-02-userloginview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                         用户登录视图
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.3" data-path="visitor-03-loginlogic.html">
+            
+                
+                    <a href="./visitor-03-loginlogic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                         设置未登录信息
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.4" data-path="visitor-04-homeanimation.html">
+            
+                
+                    <a href="./visitor-04-homeanimation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                         首页动画
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.5" data-path="visitor-05-logindelegate.html">
+            
+                
+                    <a href="./visitor-05-logindelegate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                         登录&amp;注册代理回调
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.6" data-path="visitor-06-setupappearance.html">
+            
+                
+                    <a href="./visitor-06-setupappearance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.6.</b>
+                        
+                         设置全局外观
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.6.7" data-path="visitor-07-summary.html">
+            
+                
+                    <a href="./visitor-07-summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.7.</b>
+                        
+                         阶段性小结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.7" data-path="code_review.html">
+            
+                
+                    <a href="./code_review.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                         代码评审(Code Review)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >新浪微博开发笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_16">
+                    
+                        <h1 id="">添加子控制器</h1>
+<h2 id="">功能需求</h2>
+<ul>
+<li>由于采用了多视图控制器的设计方式，因此需要通过代码的方式向主控制器中添加子控制器</li>
+</ul>
+<h2 id="">文件准备</h2>
+<ul>
+<li>将素材文件夹中的 <code>TabBar</code> 拖拽到 <code>Images.xcassets</code> 目录下</li>
+</ul>
+<h2 id="">代码实现</h2>
+<h3 id="">添加第一个视图控制器</h3>
+<pre><code class="lang-swift">    <span class="hljs-comment">/**
+     初始化子控制器
+
+     :param: childController 需要初始化的子控制器
+     :param: title           初始化的标题
+     :param: imageName       初始化的图片
+     */</span>
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">addChildViewController</span><span class="hljs-params">(childController: UIViewController, title:String, imageName:String)</span> </span>{
+
+        <span class="hljs-comment">// 1.从内像外设置, nav和tabbar都有</span>
+        childController.title = title
+        childController.tabBarItem.image = <span class="hljs-type">UIImage</span>(named: imageName)
+        childController.tabBarItem.selectedImage = <span class="hljs-type">UIImage</span>(named: imageName + <span class="hljs-string">"_highlighted"</span>)
+
+        <span class="hljs-comment">// 注意: Xocde7之前只有文字有效果, 还需要设置图片渲染模式</span>
+        tabBar.tintColor = <span class="hljs-type">UIColor</span>.orangeColor()
+
+        <span class="hljs-comment">// 2.创建导航控制器</span>
+        <span class="hljs-keyword">let</span> nav = <span class="hljs-type">UINavigationController</span>()
+        nav.addChildViewController(childController)
+
+        <span class="hljs-comment">// 3.添加控制器到tabbarVC</span>
+        addChildViewController(nav)
+    }
+</code></pre>
+<ul>
+<li>设置UITabbar的tintColor</li>
+</ul>
+<pre><code class="lang-swift"> tabBar.tintColor = <span class="hljs-type">UIColor</span>.orangeColor()
+</code></pre>
+<ul>
+<li>Xocde7之前只有文字有效果, 还需要设置图片渲染模式<ul>
+<li>方式一
+<img src="images/CreateProject/修改图片渲染模式.png" alt=""></li>
+<li>方式二<ul>
+<li>UIImageRenderingModeAutomatic  // 根据图片的使用环境和所处的绘图上下文自动调整渲染模式。</li>
+<li>UIImageRenderingModeAlwaysOriginal   // 始终绘制图片原始状态，不使用Tint Color。</li>
+<li>UIImageRenderingModeAlwaysTemplate   // 始终根据Tint Color绘制图片，忽略图片的颜色信息。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-keyword">let</span> image = <span class="hljs-type">UIImage</span>(named: imageName)
+    image?.imageWithRenderingMode(.<span class="hljs-type">AlwaysOriginal</span>)
+</code></pre>
+<ul>
+<li>扩充调用函数，添加其他控制器</li>
+</ul>
+<pre><code class="lang-swift">    <span class="hljs-comment">/**
+     添加所有子控制
+     */</span>
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">addChildViewControllers</span><span class="hljs-params">()</span> </span>{
+        addChildViewController(<span class="hljs-type">HomeTableViewController</span>(), title: <span class="hljs-string">"首页"</span>, imageName: <span class="hljs-string">"tabbar_home"</span>)
+        addChildViewController(<span class="hljs-type">MessageTableViewController</span>(), title: <span class="hljs-string">"消息"</span>, imageName: <span class="hljs-string">"tabbar_message_center"</span>)
+        addChildViewController(<span class="hljs-type">DiscoverTableViewController</span>(), title: <span class="hljs-string">"发现"</span>, imageName: <span class="hljs-string">"tabbar_discover"</span>)
+        addChildViewController(<span class="hljs-type">ProfileTableViewController</span>(), title: <span class="hljs-string">"我"</span>, imageName: <span class="hljs-string">"tabbar_profile"</span>)
+    }
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./createproject-01-createfiles.html" class="navigation navigation-prev " aria-label="Previous page: 创建文件"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./namespace.html" class="navigation navigation-next " aria-label="Next page: 代码动态创建类"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
