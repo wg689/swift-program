@@ -395,7 +395,7 @@ enum Rank :Int {
     case jack ,queen
     func simpleDescription() -> String {
         switch self {
-        case.Ace:
+        case .Ace:
             return "ace"
         case .jack:
             return "jack"
