@@ -18,6 +18,7 @@ class PhotoBrowserViewCell:UICollectionViewCell {
             if smalllImage == nil {
 //                smalllImage = UIImage(named: "empty_picture"))
             }
+            private lazy var imageView:UIImageView = UIImageView()
             
             
         }
@@ -39,6 +40,8 @@ extension PhotoBrowserViewCell {
         }
         
         //设置frame
-        imageView.frame = 
+        ima.frame = CGRect(x: x, y: y, width: imageViewW, height: imageViewH)
+        //
+        
     }
 }
