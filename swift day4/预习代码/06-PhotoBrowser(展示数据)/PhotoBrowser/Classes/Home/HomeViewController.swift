@@ -65,7 +65,7 @@ extension HomeViewController {
 
 // MARK:- CollectionView的数据源和代理方法
 extension HomeViewController {
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(colleccolletionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return shops.count
     }
     
