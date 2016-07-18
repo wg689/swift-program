@@ -47,7 +47,7 @@ extension NetWorkingTools {
 
 
 extension NetWorkingTools {
-    func loadHomeData(finishedCallBack:(result:AnyObject?) -> () ){
+    func loadHomeData(offset:Int,finished:(result :[[String:AnyObject]]?,error : NSError?) -> Void ){
         let urlString = "http://mobapi.meilishuo.com/2.0/twitter/popular.json"
         // 2.获取请求的参数
         let parameters = [
@@ -60,7 +60,17 @@ extension NetWorkingTools {
                 print(error)
                 return;
             }
-            finishedCallBack(result:result!);
+            guard let resultDict = result as? [String :AnyObject] else {
+                finished(result : nil,error: NSError(domain:"数据错误",code:-1011,userInfo: nil))
+                return
+            }
+            
+            
+            guard let results = resultDict["data"] as?[[String :AnyObject]] else {
+                finished(result: nil , error: NSError(domain: "数据错误", code: -1012, userInfo: nil))
+                return
+            }
+            finished(result: results, error: nil)
         }
         
         

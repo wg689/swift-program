@@ -17,6 +17,8 @@
 		3239F7861D3B430B0058B41C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239F7851D3B430B0058B41C /* HomeViewController.swift */; };
 		3239F7881D3B43220058B41C /* HomeCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3239F7871D3B43220058B41C /* HomeCollectionViewLayout.swift */; };
 		740BED14CCB8952C8D0FC924 /* Pods______me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6651791AD95BEA8340F803EB /* Pods______me.framework */; };
+		7AA206671D3C8A2D00ED4A3D /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA206661D3C8A2D00ED4A3D /* HomeViewCell.swift */; };
+		7ABA94781D3C738600F8BA51 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA94771D3C738600F8BA51 /* Shop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3239F7851D3B430B0058B41C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3239F7871D3B43220058B41C /* HomeCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewLayout.swift; sourceTree = "<group>"; };
 		6651791AD95BEA8340F803EB /* Pods______me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods______me.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA206661D3C8A2D00ED4A3D /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		7ABA94771D3C738600F8BA51 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		BEE3BF4AEF7A5703B330EAD7 /* Pods-图片浏览器me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-图片浏览器me.release.xcconfig"; path = "Pods/Target Support Files/Pods-图片浏览器me/Pods-图片浏览器me.release.xcconfig"; sourceTree = "<group>"; };
 		EBE5A7966D6B0A955F04563F /* Pods-图片浏览器me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-图片浏览器me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-图片浏览器me/Pods-图片浏览器me.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +153,8 @@
 		3239F7831D3B42EA0058B41C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7ABA94771D3C738600F8BA51 /* Shop.swift */,
+				7AA206661D3C8A2D00ED4A3D /* HomeViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -356,6 +362,8 @@
 				321739871D3B789700D6011A /* NetworkTools.swift in Sources */,
 				3239F7561D3B42B40058B41C /* AppDelegate.swift in Sources */,
 				3239F7861D3B430B0058B41C /* HomeViewController.swift in Sources */,
+				7ABA94781D3C738600F8BA51 /* Shop.swift in Sources */,
+				7AA206671D3C8A2D00ED4A3D /* HomeViewCell.swift in Sources */,
 				3239F7881D3B43220058B41C /* HomeCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "图片浏览器me/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dasen.HOOK-APP.-----me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "图片浏览器me/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dasen.HOOK-APP.-----me";
 				PRODUCT_NAME = "$(TARGET_NAME)";

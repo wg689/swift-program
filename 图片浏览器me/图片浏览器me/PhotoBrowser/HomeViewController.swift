@@ -12,19 +12,19 @@ import AFNetworking
 
 private let  resusibleID = "HomeCell"
 class HomeViewController: UICollectionViewController {
+    private lazy var shops : [Shop] = [Shop]()
     override func viewDidLoad() {
         super.viewDidLoad()
-    loadData()
-        
+        loadData(0)
     }
-    
+
     
     
 }
 
 extension HomeViewController {
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return shops.count
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -37,20 +37,23 @@ extension HomeViewController {
 
 
 extension HomeViewController {
-    private func loadData(){
-        NetWorkingTools.shareInstance.loadHomeData { (result) -> () in
-            let resultDic = result as! [String:NSObject!]
-            
-            guard let resultArr = resultDic["data"] as?[[NSString:NSObject]]else{
-                print("转成字典错误")
-                return;
-            }
-            for dic in resultArr {
-                print(dic)
+    private func loadData(offSet : Int){
+        NetWorkingTools.shareInstance.loadHomeData(offSet) {(result ,error) -> Void in
+            if error != nil {
+                print(error )
+                return
             }
             
+            //2.判断是否有数据
+            var tempShops = [Shop]()
+            for dict in result!{
+                tempShops.append(Shop(dict: dict))
+                
+            }
+            self.shops += tempShops
+            self.collectionView?.reloadData()
+        
         }
-    }
 }
 
 
@@ -61,5 +64,5 @@ extension HomeViewController {
 
 
 
-
+}
 
