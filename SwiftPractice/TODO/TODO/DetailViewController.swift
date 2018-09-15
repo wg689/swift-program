@@ -94,7 +94,7 @@ class DetailViewController: UIViewController {
             todo.date = todoDatePicker.date
         }else {
             let uuid = UUID().uuidString
-            todo = ToDoItem(id: uuid, image: image, title: todoTitleLable.text!, date: todoDatePicker.date)
+            todo = ToDoItem(id: uuid, image: image, title: todoTitleTextFeild.text!, date: todoDatePicker.date)
             todos.append(todo!)
         }
     
