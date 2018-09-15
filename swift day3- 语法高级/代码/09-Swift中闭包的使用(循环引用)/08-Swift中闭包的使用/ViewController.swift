@@ -24,8 +24,11 @@ class ViewController: UIViewController {
         
         // 循环引用的解决方案
         // 1.方案一:
-        /*
+        
         weak var weakSelf : ViewController? = self // ViewController
+        httpTools?.loadData({ (result) -> () in
+            
+        })
         httpTools?.loadData({ (result) -> () in
             print("在控制器中拿到数据:\(result)")
             
@@ -33,7 +36,7 @@ class ViewController: UIViewController {
             // 什么地方需要使用self. --> 1.如果在代码中产生了歧义 2.在闭包中
             weakSelf?.view.backgroundColor = UIColor.blueColor()
         })
-        */
+
         
         // 2.方案二:类同方案一,只是写法不一样
         /*

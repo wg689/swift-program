@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         httpTools?.loadData({ (result) -> () in
             print("在控制器中拿到数据:\(result)")
         })
+      
     }
 }
 

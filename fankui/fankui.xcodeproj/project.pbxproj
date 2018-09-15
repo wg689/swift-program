@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3204BE961D67E7DD0081D33F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204BE951D67E7DD0081D33F /* main.m */; };
+		3204BE991D67E7DD0081D33F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204BE981D67E7DD0081D33F /* AppDelegate.m */; };
+		3204BE9C1D67E7DD0081D33F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204BE9B1D67E7DD0081D33F /* ViewController.m */; };
+		3204BEA11D67E7DD0081D33F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3204BEA01D67E7DD0081D33F /* Assets.xcassets */; };
+		3204BEA41D67E7DD0081D33F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3204BEA21D67E7DD0081D33F /* LaunchScreen.storyboard */; };
+		3204BEAF1D67E7DE0081D33F /* fankuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204BEAE1D67E7DE0081D33F /* fankuiTests.m */; };
+		3204BEBA1D67E7DE0081D33F /* fankuiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204BEB91D67E7DE0081D33F /* fankuiUITests.m */; };
+		3204BEC91D67E8050081D33F /* QTOpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204BEC81D67E8050081D33F /* QTOpinionViewController.m */; };
+		3204BECC1D67EA0B0081D33F /* UITextField+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204BECB1D67EA0B0081D33F /* UITextField+WF.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3204BEAB1D67E7DE0081D33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3204BE891D67E7DD0081D33F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3204BE901D67E7DD0081D33F;
+			remoteInfo = fankui;
+		};
+		3204BEB61D67E7DE0081D33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3204BE891D67E7DD0081D33F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3204BE901D67E7DD0081D33F;
+			remoteInfo = fankui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3204BE911D67E7DD0081D33F /* fankui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fankui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3204BE951D67E7DD0081D33F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3204BE971D67E7DD0081D33F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3204BE981D67E7DD0081D33F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3204BE9A1D67E7DD0081D33F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3204BE9B1D67E7DD0081D33F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3204BEA01D67E7DD0081D33F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3204BEA31D67E7DD0081D33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3204BEA51D67E7DD0081D33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3204BEAA1D67E7DE0081D33F /* fankuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fankuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3204BEAE1D67E7DE0081D33F /* fankuiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fankuiTests.m; sourceTree = "<group>"; };
+		3204BEB01D67E7DE0081D33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3204BEB51D67E7DE0081D33F /* fankuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fankuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3204BEB91D67E7DE0081D33F /* fankuiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fankuiUITests.m; sourceTree = "<group>"; };
+		3204BEBB1D67E7DE0081D33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3204BEC71D67E8050081D33F /* QTOpinionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTOpinionViewController.h; sourceTree = "<group>"; };
+		3204BEC81D67E8050081D33F /* QTOpinionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTOpinionViewController.m; sourceTree = "<group>"; };
+		3204BECA1D67EA0B0081D33F /* UITextField+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WF.h"; sourceTree = "<group>"; };
+		3204BECB1D67EA0B0081D33F /* UITextField+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WF.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3204BE8E1D67E7DD0081D33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3204BEA71D67E7DE0081D33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3204BEB21D67E7DE0081D33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3204BE881D67E7DD0081D33F = {
+			isa = PBXGroup;
+			children = (
+				3204BE931D67E7DD0081D33F /* fankui */,
+				3204BEAD1D67E7DE0081D33F /* fankuiTests */,
+				3204BEB81D67E7DE0081D33F /* fankuiUITests */,
+				3204BE921D67E7DD0081D33F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3204BE921D67E7DD0081D33F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3204BE911D67E7DD0081D33F /* fankui.app */,
+				3204BEAA1D67E7DE0081D33F /* fankuiTests.xctest */,
+				3204BEB51D67E7DE0081D33F /* fankuiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3204BE931D67E7DD0081D33F /* fankui */ = {
+			isa = PBXGroup;
+			children = (
+				3204BECA1D67EA0B0081D33F /* UITextField+WF.h */,
+				3204BECB1D67EA0B0081D33F /* UITextField+WF.m */,
+				3204BEC71D67E8050081D33F /* QTOpinionViewController.h */,
+				3204BEC81D67E8050081D33F /* QTOpinionViewController.m */,
+				3204BE971D67E7DD0081D33F /* AppDelegate.h */,
+				3204BE981D67E7DD0081D33F /* AppDelegate.m */,
+				3204BE9A1D67E7DD0081D33F /* ViewController.h */,
+				3204BE9B1D67E7DD0081D33F /* ViewController.m */,
+				3204BEA01D67E7DD0081D33F /* Assets.xcassets */,
+				3204BEA21D67E7DD0081D33F /* LaunchScreen.storyboard */,
+				3204BEA51D67E7DD0081D33F /* Info.plist */,
+				3204BE941D67E7DD0081D33F /* Supporting Files */,
+			);
+			path = fankui;
+			sourceTree = "<group>";
+		};
+		3204BE941D67E7DD0081D33F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3204BE951D67E7DD0081D33F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3204BEAD1D67E7DE0081D33F /* fankuiTests */ = {
+			isa = PBXGroup;
+			children = (
+				3204BEAE1D67E7DE0081D33F /* fankuiTests.m */,
+				3204BEB01D67E7DE0081D33F /* Info.plist */,
+			);
+			path = fankuiTests;
+			sourceTree = "<group>";
+		};
+		3204BEB81D67E7DE0081D33F /* fankuiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3204BEB91D67E7DE0081D33F /* fankuiUITests.m */,
+				3204BEBB1D67E7DE0081D33F /* Info.plist */,
+			);
+			path = fankuiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3204BE901D67E7DD0081D33F /* fankui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3204BEBE1D67E7DE0081D33F /* Build configuration list for PBXNativeTarget "fankui" */;
+			buildPhases = (
+				3204BE8D1D67E7DD0081D33F /* Sources */,
+				3204BE8E1D67E7DD0081D33F /* Frameworks */,
+				3204BE8F1D67E7DD0081D33F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fankui;
+			productName = fankui;
+			productReference = 3204BE911D67E7DD0081D33F /* fankui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3204BEA91D67E7DE0081D33F /* fankuiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3204BEC11D67E7DE0081D33F /* Build configuration list for PBXNativeTarget "fankuiTests" */;
+			buildPhases = (
+				3204BEA61D67E7DE0081D33F /* Sources */,
+				3204BEA71D67E7DE0081D33F /* Frameworks */,
+				3204BEA81D67E7DE0081D33F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3204BEAC1D67E7DE0081D33F /* PBXTargetDependency */,
+			);
+			name = fankuiTests;
+			productName = fankuiTests;
+			productReference = 3204BEAA1D67E7DE0081D33F /* fankuiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3204BEB41D67E7DE0081D33F /* fankuiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3204BEC41D67E7DE0081D33F /* Build configuration list for PBXNativeTarget "fankuiUITests" */;
+			buildPhases = (
+				3204BEB11D67E7DE0081D33F /* Sources */,
+				3204BEB21D67E7DE0081D33F /* Frameworks */,
+				3204BEB31D67E7DE0081D33F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3204BEB71D67E7DE0081D33F /* PBXTargetDependency */,
+			);
+			name = fankuiUITests;
+			productName = fankuiUITests;
+			productReference = 3204BEB51D67E7DE0081D33F /* fankuiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3204BE891D67E7DD0081D33F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = wanggang;
+				TargetAttributes = {
+					3204BE901D67E7DD0081D33F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UW9FQ7575J;
+						DevelopmentTeamName = "高超 张 (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					3204BEA91D67E7DE0081D33F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UW9FQ7575J;
+						DevelopmentTeamName = "高超 张 (Personal Team)";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3204BE901D67E7DD0081D33F;
+					};
+					3204BEB41D67E7DE0081D33F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UW9FQ7575J;
+						DevelopmentTeamName = "高超 张 (Personal Team)";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3204BE901D67E7DD0081D33F;
+					};
+				};
+			};
+			buildConfigurationList = 3204BE8C1D67E7DD0081D33F /* Build configuration list for PBXProject "fankui" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3204BE881D67E7DD0081D33F;
+			productRefGroup = 3204BE921D67E7DD0081D33F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3204BE901D67E7DD0081D33F /* fankui */,
+				3204BEA91D67E7DE0081D33F /* fankuiTests */,
+				3204BEB41D67E7DE0081D33F /* fankuiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3204BE8F1D67E7DD0081D33F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3204BEA41D67E7DD0081D33F /* LaunchScreen.storyboard in Resources */,
+				3204BEA11D67E7DD0081D33F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3204BEA81D67E7DE0081D33F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3204BEB31D67E7DE0081D33F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3204BE8D1D67E7DD0081D33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3204BECC1D67EA0B0081D33F /* UITextField+WF.m in Sources */,
+				3204BEC91D67E8050081D33F /* QTOpinionViewController.m in Sources */,
+				3204BE9C1D67E7DD0081D33F /* ViewController.m in Sources */,
+				3204BE991D67E7DD0081D33F /* AppDelegate.m in Sources */,
+				3204BE961D67E7DD0081D33F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3204BEA61D67E7DE0081D33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3204BEAF1D67E7DE0081D33F /* fankuiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3204BEB11D67E7DE0081D33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3204BEBA1D67E7DE0081D33F /* fankuiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3204BEAC1D67E7DE0081D33F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3204BE901D67E7DD0081D33F /* fankui */;
+			targetProxy = 3204BEAB1D67E7DE0081D33F /* PBXContainerItemProxy */;
+		};
+		3204BEB71D67E7DE0081D33F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3204BE901D67E7DD0081D33F /* fankui */;
+			targetProxy = 3204BEB61D67E7DE0081D33F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3204BEA21D67E7DD0081D33F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3204BEA31D67E7DD0081D33F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3204BEBC1D67E7DE0081D33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3204BEBD1D67E7DE0081D33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3204BEBF1D67E7DE0081D33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fankui/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dasen.HOOK-APP.fankui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3204BEC01D67E7DE0081D33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fankui/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dasen.HOOK-APP.fankui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3204BEC21D67E7DE0081D33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = fankuiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dasen.HOOK-APP.fankuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fankui.app/fankui";
+			};
+			name = Debug;
+		};
+		3204BEC31D67E7DE0081D33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = fankuiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dasen.HOOK-APP.fankuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fankui.app/fankui";
+			};
+			name = Release;
+		};
+		3204BEC51D67E7DE0081D33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = fankuiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dasen.HOOK-APP.fankuiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = fankui;
+			};
+			name = Debug;
+		};
+		3204BEC61D67E7DE0081D33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = fankuiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dasen.HOOK-APP.fankuiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = fankui;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3204BE8C1D67E7DD0081D33F /* Build configuration list for PBXProject "fankui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3204BEBC1D67E7DE0081D33F /* Debug */,
+				3204BEBD1D67E7DE0081D33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3204BEBE1D67E7DE0081D33F /* Build configuration list for PBXNativeTarget "fankui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3204BEBF1D67E7DE0081D33F /* Debug */,
+				3204BEC01D67E7DE0081D33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3204BEC11D67E7DE0081D33F /* Build configuration list for PBXNativeTarget "fankuiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3204BEC21D67E7DE0081D33F /* Debug */,
+				3204BEC31D67E7DE0081D33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3204BEC41D67E7DE0081D33F /* Build configuration list for PBXNativeTarget "fankuiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3204BEC51D67E7DE0081D33F /* Debug */,
+				3204BEC61D67E7DE0081D33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3204BE891D67E7DD0081D33F /* Project object */;
+}

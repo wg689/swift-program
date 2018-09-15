@@ -11,6 +11,7 @@ import UIKit
 class HttpTools: NSObject {
     // 闭包类型: (参数列表) -> (返回值的类型)  () -> ()
     func loadData(finishedCallback: (result : String) -> ()) {
+        
         // 1.发送异步请求
         dispatch_async(dispatch_get_global_queue(0, 0)) { () -> Void in
             print("发送异步请求:\(NSThread.currentThread())")

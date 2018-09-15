@@ -1,6 +1,0 @@
-framework module Pods______me {
-  umbrella header "Pods-图片浏览器me-umbrella.h"
-
-  export *
-  module * { export * }
-}
