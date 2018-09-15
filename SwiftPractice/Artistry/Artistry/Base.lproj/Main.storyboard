@@ -69,6 +69,7 @@
                                             <outlet property="headImage" destination="gmU-Qz-xsu" id="hgm-pP-W3P"/>
                                             <outlet property="lable1" destination="1aG-js-Bxd" id="sHE-nk-zYx"/>
                                             <outlet property="lable2" destination="ULm-KZ-goQ" id="1v5-CO-wQR"/>
+                                            <segue destination="npE-04-VxF" kind="show" id="dOx-xV-RyW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -95,6 +96,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTp-f0-1hv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="428" y="100.29985007496252"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="LPH-ud-Ddp">
+            <objects>
+                <viewController id="npE-04-VxF" customClass="DetailViewController" customModule="Artistry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eV2-wR-8y4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OTL-W7-B1C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetaiTableViewCell" rowHeight="320" id="l3y-w2-PRm" customClass="DetaiTableViewCell" customModule="Artistry" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l3y-w2-PRm" id="3mY-uX-6rR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="319.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ox4-Fb-h6l">
+                                                    <rect key="frame" x="52" y="-7" width="308" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yAF-p8-U02">
+                                                    <rect key="frame" x="15" y="75" width="345" height="234"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9C-Ze-gNJ">
+                                                    <rect key="frame" x="185" y="31" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="image1" destination="Ox4-Fb-h6l" id="Uu8-6Y-aVN"/>
+                                            <outlet property="lable" destination="x9C-Ze-gNJ" id="lUt-n3-f7h"/>
+                                            <outlet property="textView1" destination="yAF-p8-U02" id="Y5V-LQ-qvU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="npE-04-VxF" id="bvf-Vc-TmK"/>
+                                    <outlet property="delegate" destination="npE-04-VxF" id="7Z2-yk-VhO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OTL-W7-B1C" firstAttribute="leading" secondItem="syq-lf-eaY" secondAttribute="leading" id="AOo-7T-uF2"/>
+                            <constraint firstItem="OTL-W7-B1C" firstAttribute="height" secondItem="syq-lf-eaY" secondAttribute="height" id="OWb-wP-iGx"/>
+                            <constraint firstItem="OTL-W7-B1C" firstAttribute="top" secondItem="syq-lf-eaY" secondAttribute="top" id="dgF-Ug-L7N"/>
+                            <constraint firstItem="OTL-W7-B1C" firstAttribute="width" secondItem="syq-lf-eaY" secondAttribute="width" id="vIk-m8-URe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="syq-lf-eaY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView1" destination="OTL-W7-B1C" id="Swf-Wa-Qnw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrY-3v-TZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1458.4000000000001" y="86.806596701649184"/>
         </scene>
     </scenes>
 </document>

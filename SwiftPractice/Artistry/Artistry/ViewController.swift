@@ -24,6 +24,15 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detination = segue.destination as? DetailViewController{
+            let indexpath = tabeleView.indexPathForSelectedRow
+            detination.selectArtist = artists[(indexpath?.row)!]
+        }
+    }
+    
 }
 
 

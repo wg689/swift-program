@@ -10,15 +10,41 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var tableView1: UITableView!
+    
+    var selectArtist: Artist!
+    let moreInfoText = "Select For More Info >"
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = selectArtist.name
+        tableView1.rowHeight = UITableViewAutomaticDimension
+        tableView1.estimatedRowHeight = 300
+        NotificationCenter.default.addObserver(forName: .UIContentSizeCategoryDidChange, object: .none, queue: OperationQueue.main) { [weak self] _ in
+            self?.tableView1 .reloadData()
+        }
 
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension DetailViewController:UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return selectArtist.works.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetaiTableViewCell", for: indexPath)as! DetaiTableViewCell
+        let work = selectArtist.works[indexPath.row]
+        cell.lable?.text = work.title
+        cell.image1?.image = work.image
+        cell.textView1.text = work.isExpanded ? work.info  :moreInfoText;
+        
+        return cell
+        
     }
     
 }
+
+
