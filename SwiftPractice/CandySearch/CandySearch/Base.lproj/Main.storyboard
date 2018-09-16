@@ -19,13 +19,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kgk-sY-Hel">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="W1z-rw-R5j" detailTextLabel="nZY-gJ-ro7" style="IBUITableViewCellStyleSubtitle" id="kgk-sY-Hel">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kgk-sY-Hel" id="E9Q-Fg-fHy">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W1z-rw-R5j">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nZY-gJ-ro7">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ez9-on-bvg" kind="showDetail" identifier="showDetail" id="W2R-g1-Ecc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -71,21 +90,55 @@
             </objects>
             <point key="canvasLocation" x="207" y="260"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="RXN-XP-cxt">
             <objects>
-                <viewController id="c5u-bU-yb7" sceneMemberID="viewController">
+                <viewController id="c5u-bU-yb7" customClass="DetailViewController" customModule="CandySearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6B-Oa-ray">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TYV-lW-hFR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHc-3j-nai">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="NOr-UH-6fQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tZN-E4-e5c">
+                                        <rect key="frame" x="0.0" y="34" width="375" height="569"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tZN-E4-e5c" firstAttribute="top" secondItem="NHc-3j-nai" secondAttribute="bottom" id="5as-DX-BQG"/>
+                                    <constraint firstItem="tZN-E4-e5c" firstAttribute="leading" secondItem="TYV-lW-hFR" secondAttribute="leading" id="wBt-Eu-npy"/>
+                                    <constraint firstAttribute="trailing" secondItem="tZN-E4-e5c" secondAttribute="trailing" id="zlY-EP-xWz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Adh-rj-bTo" firstAttribute="trailing" secondItem="TYV-lW-hFR" secondAttribute="trailing" id="OtZ-9B-lju"/>
+                            <constraint firstItem="TYV-lW-hFR" firstAttribute="top" secondItem="Adh-rj-bTo" secondAttribute="top" id="U17-mE-ial"/>
+                            <constraint firstItem="Adh-rj-bTo" firstAttribute="bottom" secondItem="TYV-lW-hFR" secondAttribute="bottom" id="klz-yQ-bYZ"/>
+                            <constraint firstItem="TYV-lW-hFR" firstAttribute="leading" secondItem="Adh-rj-bTo" secondAttribute="leading" id="v7c-AQ-UYo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Adh-rj-bTo"/>
                     </view>
                     <navigationItem key="navigationItem" id="zvT-1M-zcM"/>
+                    <connections>
+                        <outlet property="image" destination="tZN-E4-e5c" id="lMd-nm-wsc"/>
+                        <outlet property="lable" destination="NHc-3j-nai" id="DsX-dX-f3K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4J9-Py-sOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="285"/>
+            <point key="canvasLocation" x="1240.8" y="284.70764617691157"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="X7u-xD-bPJ">
@@ -101,4 +154,7 @@
             <point key="canvasLocation" x="-673" y="-105"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="TNI-Ae-Qpd"/>
+    </inferredMetricsTieBreakers>
 </document>
