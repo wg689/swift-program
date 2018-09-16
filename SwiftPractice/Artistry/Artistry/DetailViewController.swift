@@ -46,5 +46,24 @@ extension DetailViewController:UITableViewDataSource {
     }
     
 }
-
+extension DetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? DetaiTableViewCell else {
+            return
+        }
+        
+        var work = selectArtist.works[indexPath.row]
+        
+        work.isExpanded = !work.isExpanded
+        selectArtist.works[indexPath.row] = work
+        
+        cell.textView1.text = work.isExpanded ? work.info : moreInfoText
+        cell.textView1.textAlignment = work.isExpanded ? .left : .center
+        
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+    }
+}
 
