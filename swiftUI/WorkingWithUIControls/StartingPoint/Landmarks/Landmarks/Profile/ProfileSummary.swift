@@ -28,16 +28,24 @@ struct ProfileSummary: View {
             
             Text("Goal Date: \(self.profile.goalDate, formatter: Self.goalFormat)")
             
-            ScrollView {
-                HStack {
-                    HikeBadge(name: "first hike")
-                    
-                    HikeBadge(name: "Early day").hueRotation(Angle(degrees: 90))
-                    
-                    HikeBadge(name: "Tench Hike").grayscale(0.5).hueRotation(Angle(degrees: 90))
-                                    
+            VStack(alignment: .leading) {
+                Text("Completed Badges")
+                                    .font(.headline)
+                
+                ScrollView {
+                    HStack {
+                        HikeBadge(name: "first hike")
+                        
+                        HikeBadge(name: "Early day")
+                            .hueRotation(Angle(degrees: 90))
+                        
+                        HikeBadge(name: "Tenc Hike")
+                            .grayscale(0.5)
+                            .hueRotation(Angle(degrees: 90))
+                    }
                 }
-            }.frame(height: 140)
+                .frame(height: 140)
+            }
         }
     }
 }
