@@ -9,13 +9,40 @@
 import SwiftUI
 
 struct ProfileHost: View {
-    @State var draftProfie = Profile.default
+    @Environment(\.editMode) var mode
+    @EnvironmentObject var userData: UserData
+    @State var draftProfile = Profile.default
+
     var body: some View {
-        Text("1")
         VStack(alignment: .leading, spacing: 20) {
-            ProfileSummary(profile: draftProfie)
+            HStack {
+                
+                if self.mode?.wrappedValue == .active {
+                    Button("cancel") {
+                        self.draftProfile = self.userData.profile
+                        self.mode?.animation().wrappedValue = .inactive
+                    }
+                }
+                
+                Spacer()
+                
+                EditButton()
+            }
+            
+            if self.mode?.wrappedValue == .inactive {
+                ProfileSummary(profile: Profile.default)
+            } else {
+                ProfileEditor(profile: $draftProfile)
+                    .onAppear {
+                        self.draftProfile = self.userData.profile
+                    }
+                    .onDisappear {
+                        self.userData.profile = self.draftProfile
+                    }
+            }
         }.padding()
     }
+    
 }
 
 struct ProfileHost_Previews: PreviewProvider {
