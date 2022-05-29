@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CategoryHome: View {
     var body: some View {
+        Text("Hello, World!")
         
     }
 }
