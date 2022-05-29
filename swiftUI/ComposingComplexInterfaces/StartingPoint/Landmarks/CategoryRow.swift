@@ -25,7 +25,11 @@ struct CategoryRow: View {
         ScrollView(.horizontal,showsIndicators:false) {
             HStack(alignment: .top, spacing: 0, content: {
                 ForEach(self.items) { landmark in
-                    Text(landmark.name)
+//                    Text(landmark.name)
+                    NavigationLink(
+                        destination: LandmarkDetail(landmark: landmark)) {
+                        CategoryItem(landmark: landmark)
+                    }
                 }
             })
         }
@@ -39,5 +43,19 @@ struct CategoryRow_Previews: PreviewProvider {
             categoryName: landmarkData[0].category.rawValue,
             items: Array(landmarkData.prefix(4))
         )
+    }
+}
+
+struct CategoryItem: View {
+    var landmark: Landmark
+    var body: some View {
+        VStack(alignment: .leading) {
+            landmark.image
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 155, height:150)
+            Text(landmark.name)
+                .font(.caption)
+        }.padding(.leading,15)
     }
 }
