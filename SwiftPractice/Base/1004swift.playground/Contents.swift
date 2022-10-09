@@ -103,7 +103,7 @@ for beverage in Beverage2.allCases {
 
 switch productBarcode {
 case .upc(let numberSystem, let manufacture, let product, let check):
-    print("UPC: \(numberSystem), \(manufacturer), \(product), \(check).")
+    print("UPC: \(numberSystem), \(manufacture), \(product), \(check).")
 case .qrCode(let productCode):
     print("QRcode: \(productCode).")
 }
@@ -236,6 +236,697 @@ manager.data.append("some data")
 manager.data.append("Some more data")
 
 print(manager.importer.fileName)
+
+struct Point {
+    var x = 0.0,y = 0.0
+}
+
+
+struct Size {
+    var width = 0.0 , height = 0.0
+}
+
+struct Rect {
+    var origin = Point()
+    var size = Size()
+    var  center: Point {
+        get {
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+            
+        }
+        set(newCenter) {
+            origin.x = newCenter.x - (size.width / 2)
+            origin.y = newCenter.y - (size.height / 2)
+            
+        }
+    }
+}
+
+var square = Rect(origin: Point(x: 0.0, y: 0.0), size: Size(width: 10, height: 20))
+
+let initialSqu = square.center
+square.center = Point(x: 15, y: 15)
+print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
+
+
+struct AlternativeRect {
+    var origin = Point()
+    var size = Size()
+    var center: Point {
+        get {
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y  + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+        }
+        
+        set {
+            origin.x = newValue.x - (size.width / 2)
+            origin.y =  newValue.y - (size.height / 2)
+        }
+    }
+}
+
+struct CompactRect {
+    var origin = Point()
+    var size = Size()
+    var center: Point {
+        get {
+            Point(x: origin.x + (size.width/2),
+                  y: origin.y + (size.height/2))
+        }
+        
+        set {
+            origin.x = newValue.x - (size.width / 2)
+            origin.y = newValue.y - (size.height / 2)
+        }
+    }
+}
+
+struct Cubiod {
+    var width = 0.0, height = 0, depth = 0.0
+    var volume: Double {
+        return width * Double(height) * depth
+    }
+}
+
+let fourByFiveByTwo = Cubiod(width: 4.0, height: Int(5.0), depth: 2.0)
+
+print("the volume of fourByFiveByTwo is \(fourByFiveByTwo.volume)")
+
+
+class StepCounter {
+    var totalSteps: Int = 0 {
+        willSet(newTotalSteps) {
+            print("将 totalSteps 的值设置为 \(newTotalSteps)")
+        }
+        
+        didSet {
+            if totalSteps > oldValue {
+                print("增加了 \(totalSteps - oldValue) 步")
+            }
+        }
+    }
+}
+
+let stepCounter = StepCounter()
+stepCounter.totalSteps = 200
+stepCounter.totalSteps = 360
+stepCounter.totalSteps = 896
+
+
+
+@propertyWrapper
+struct TwelveOrLess {
+    private var number = 0
+    var wrappedValue: Int {
+        get {return number}
+        set {number = min(newValue, 12)}
+    }
+}
+
+struct SmallRectangle {
+    @TwelveOrLess var height: Int
+    @TwelveOrLess var width: Int
+}
+
+var rectangle = SmallRectangle()
+
+print(rectangle.height)
+
+rectangle.height = 24
+
+print(rectangle.height)
+
+struct smallRectangle {
+    private var _height = TwelveOrLess()
+    private var _width = TwelveOrLess()
+    var height: Int {
+        get { return _height.wrappedValue }
+        set {_height.wrappedValue = newValue}
+    }
+    
+    var width: Int {
+        get {return _width.wrappedValue}
+        set {_width.wrappedValue = newValue}
+    }
+}
+
+@propertyWrapper
+struct SmallNumber {
+    private  var maximum: Int
+    private var number: Int
+    var wrappedValue: Int {
+        get {return number}
+        set {number = min(newValue, maximum)}
+    }
+    
+    init() {
+        maximum = 12
+        number = 0
+    }
+    
+    init(wrappedValue: Int) {
+        maximum = 12
+        number = min(wrappedValue, maximum)
+    }
+    
+    init(wrappedValue: Int, maximum:Int) {
+        self.maximum = maximum
+        number = min(wrappedValue, maximum)
+    }
+}
+
+struct ZeroRectangle {
+    @SmallNumber var height: Int
+    @SmallNumber var width: Int
+}
+
+var zeroRectangle = ZeroRectangle()
+print(zeroRectangle.height, zeroRectangle.width)
+
+struct UnitRectangle {
+    @SmallNumber var height: Int = 1
+    @SmallNumber var width: Int = 1
+}
+
+var unitRectangle = UnitRectangle()
+print(unitRectangle.height , unitRectangle.width)
+
+
+struct NarrowRectTangle {
+    @SmallNumber(wrappedValue: 2, maximum:5) var height: Int
+    @SmallNumber(wrappedValue: 2,maximum:4) var width: Int
+}
+
+var narrowRectangle = NarrowRectTangle()
+print(narrowRectangle.height , narrowRectangle.width)
+
+
+narrowRectangle.height = 100
+narrowRectangle.width = 100
+
+print(narrowRectangle.height, narrowRectangle.width)
+
+
+struct MixedRectangle {
+    @SmallNumber var height: Int = 1
+    @SmallNumber(maximum: 9) var width: Int = 2
+}
+
+var mixedRectanble = MixedRectangle()
+print(mixedRectanble.height)
+
+mixedRectanble.height = 20
+print(mixedRectanble.height)
+
+
+@propertyWrapper
+struct SmallNumber2 {
+    private var number: Int
+    private(set) var projectedValue: Bool
+    
+    var wrappedValue: Int {
+        get {return number}
+        set {
+            if newValue > 12 {
+                number = 12
+                projectedValue = true
+            } else {
+                number = newValue
+                projectedValue = false
+            }
+        }
+    }
+    
+    init( ) {
+        self.number = 0
+        self.projectedValue = false
+    }
+}
+
+struct SomeStructure2{
+    @SmallNumber var someNumber: Int
+}
+
+var someStructure = SomeStructure2()
+someStructure.someNumber = 4
+
+print(someStructure.someNumber)
+
+
+someStructure.someNumber = 55
+print(someStructure.someNumber)
+
+enum Size2 {
+    case small ,large
+}
+
+struct SizeRectangle {
+    @SmallNumber var height: Int
+    @SmallNumber var width: Int
+    
+    mutating func resize(to size: Size2) -> Bool {
+        switch size {
+        case .small:
+            height = 10
+            width = 20
+        case .large:
+            height = 100
+            width = 100
+            
+        }
+        return height > 0 || width > 0
+    }
+}
+
+
+func someFunction() {
+    var myNumber: Int = 0
+    myNumber = 10
+    myNumber = 24
+}
+
+struct SomeStructure22 {
+    static var storeTypeProperty = "Some Value"
+    static var computedTypeProperty: Int {
+        return 1
+    }
+}
+
+enum SomeEnumeration {
+    static var storedTypeProperty = "Some value"
+    static var computedTypeProperty: Int {
+        return 6
+    }
+    
+}
+
+class SomeClass22 {
+    static var storeTypeProperty = "Some value."
+    static var computedTypeProperty: Int {
+        return 27
+    }
+    
+    class var overrideableComputedTypeProperty: Int {
+        return 107
+    }
+}
+
+
+//print(SomeStructure.storedTypeProperty)
+//// 打印“Some value.”
+//SomeStructure.storedTypeProperty = "Another value."
+//print(SomeStructure.storedTypeProperty)
+//// 打印“Another value.”
+//print(SomeEnumeration.computedTypeProperty)
+//// 打印“6”
+//print(SomeClass.computedTypeProperty)
+//// 打印“27”
+
+
+
+struct AudioChannel {
+    static let thresholdLevel = 10
+    static var maxInputLevelForAllChannels = 0
+    var currentLevel: Int = 0 {
+        didSet {
+            if currentLevel > AudioChannel.thresholdLevel {
+                currentLevel = AudioChannel.thresholdLevel
+            }
+            
+            if currentLevel > AudioChannel.maxInputLevelForAllChannels {
+                AudioChannel.maxInputLevelForAllChannels = currentLevel
+            }
+        }
+    }
+}
+
+var leftChannel = AudioChannel()
+
+var rightChanel = AudioChannel()
+
+leftChannel.currentLevel = 7
+
+print(leftChannel.currentLevel)
+// 输出“7”
+print(AudioChannel.maxInputLevelForAllChannels)
+// 输出“7”
+
+
+
+struct Point2 {
+    var x = 0.0 , y = 0.0
+    mutating func moveBy(x deltaX:Double , y deltaY:Double) {
+        x += deltaX
+        y += deltaY
+    }
+}
+
+var somePoint = Point2(x: 1.0, y: 1.0)
+
+somePoint.moveBy(x: 2.0, y: 3.0)
+
+print(leftChannel.currentLevel)
+// 输出“7”
+print(AudioChannel.maxInputLevelForAllChannels)
+// 输出“7”
+
+
+struct Point3 {
+    var x = 0.0, y = 0.0
+    mutating func moveBy(x deltax: Double ,y deltaY: Double ) {
+        self = Point3(x: x + deltax, y: y + deltaY)
+    }
+}
+
+enum TriStateSwitch {
+    case off, low, high
+    mutating func next() {
+        switch self {
+        case .off:
+            self = .low
+        case .low:
+            self =  .high
+        case .high:
+            self = .off
+        }
+    }
+}
+
+var overLight = TriStateSwitch.low
+overLight.next()
+overLight.next()
+
+class SomeClass2 {
+    class func someTypeMethod() {
+        
+    }
+}
+
+SomeClass2.someTypeMethod()
+
+
+struct LevelTracker {
+    static var highestUnlockedLevel = 1
+    var currentLevel = 1
+    
+    static func unlock(_ level:Int) {
+        if level > highestUnlockedLevel {
+            highestUnlockedLevel = level
+        }
+    }
+    
+    static func isUnlocked(_ level: Int) -> Bool {
+        return level <= highestUnlockedLevel
+    }
+    
+    @discardableResult
+    mutating func advance(to level: Int) -> Bool {
+        if LevelTracker.isUnlocked(level) {
+            currentLevel = level
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+
+class Player {
+    var tracker = LevelTracker()
+    let playerName: String
+    func complete(level: Int) {
+        LevelTracker.unlock(level + 1)
+        tracker.advance(to: level + 1)
+    }
+    
+    init(name: String) {
+        playerName = name
+    }
+}
+
+var player = Player(name: "Argrios")
+player.complete(level: 1)
+
+print("highest unlocked level is now \(LevelTracker.highestUnlockedLevel)")
+
+
+player = Player(name: "Beto")
+if player.tracker.advance(to: 6) {
+    print("player is now on level 6")
+} else {
+    print("level 6 has not yet been unlocked")
+}
+
+struct TimesTable {
+    let multiplier: Int
+    subscript(index: Int) -> Int {
+        return multiplier * index
+    }
+    
+    
+}
+
+let threeTimesTable = TimesTable(multiplier: 3)
+
+print("six times three is \(threeTimesTable[6])")
+
+var numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
+numberOfLegs["bird"] = 2
+
+
+enum Planet2: Int {
+    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
+    static subscript(n: Int) -> Planet2 {
+        return Planet2(rawValue: n)!
+    }
+}
+
+let mars = Planet2[4]
+
+print(mars)
+
+
+class Vehicle2 {
+    var currendSpeed = 0.0
+    var description: String {
+        return "traveling at \(currendSpeed) miles per hour"
+    }
+    
+    func makeNoise() {
+        
+    }
+}
+
+let someVehicle = Vehicle2()
+
+print("Vehicle: \(someVehicle.description)")
+
+
+class Bicycle: Vehicle2 {
+    var hasBasket = false
+}
+
+let vicycle = Bicycle()
+vicycle.hasBasket = true
+
+
+class Temdem: Bicycle {
+    var currentNumberOfPassengers = 0
+}
+
+let tandem = Temdem()
+tandem.hasBasket = true
+tandem.currentNumberOfPassengers = 2
+tandem.currendSpeed = 22.0
+print("Tandem: \(tandem.description)")
+
+
+class Train: Vehicle2 {
+    override func makeNoise() {
+        print("choo choo")
+    }
+}
+
+let train = Train()
+train.makeNoise()
+
+class Car: Vehicle2 {
+    var gear = 1
+    override var description: String {
+        return super.description + " in gear \(gear)"
+    }
+}
+
+let car = Car()
+car.currendSpeed = 25.0
+car.gear = 3
+print("Car: \(car.description)")
+
+
+class AutomaticCar: Car {
+    override var currendSpeed: Double {
+        didSet {
+            gear = Int(currendSpeed / 10.0 ) + 1
+        }
+    }
+}
+
+struct Fahrenheit {
+    var temperature: Double
+    init() {
+        temperature = 32.0
+    }
+}
+
+var f = Fahrenheit()
+print("The default temperature is \(f.temperature)° Fahrenheit")
+
+
+
+struct Celsius {
+    var temperatureInCelsinus: Double
+    init(fromFarenheit fahrenheit:Double) {
+        temperatureInCelsinus = (fahrenheit - 32.0)/1.8
+    }
+    
+    init(fromKelvin kelvin: Double) {
+        temperatureInCelsinus = kelvin - 273.15
+    }
+    
+    
+}
+
+
+let boilingPointOfWater = Celsius(fromFarenheit: 212.0)
+let freezingPointOfWater = Celsius(fromKelvin: 273.15)
+
+
+class SurveyQustion {
+    let text: String
+    var response: String?
+    init(text: String) {
+        self.text = text
+    }
+    
+    func ask() {
+        print(text)
+    }
+}
+
+let beetsQuestion = SurveyQustion(text: "How about beets?")
+beetsQuestion.ask()
+beetsQuestion.response = "I also like beets. (But not with cheese.)"
+
+
+class ShoppingListItem {
+    var name: String = ""
+    var quantity  = 1
+    var purchased = false
+}
+
+var item = ShoppingListItem()
+let twoByTwo = Size(width: 2.0, height: 2.0)
+
+let zeroByTwo = Size(height: 2.0)
+print(zeroByTwo.width, zeroByTwo.height)
+// 打印 "0.0 2.0"
+
+let zeroByZero = Size()
+print(zeroByZero.width, zeroByZero.height)
+// 打印 "0.0 0.0"
+
+struct Rect2 {
+    var origin = Point()
+    var size = Size()
+    init() {}
+    
+    init(origin:Point, size: Size) {
+        self.origin = origin
+        self.size = size
+    }
+    
+    init(center: Point, size:Size) {
+        let originX = center.x - (size.width / 2)
+        let originY = center.y - (size.height / 2 )
+        self.init(origin: Point(x: originX, y: originY), size: size)
+    }
+    
+}
+
+let basicRect = Rect()
+
+//20221009  21:54
+let originRect = Rect(origin: Point(x: 2.0, y: 2.0), size: Size(width: 5.0, height: 5.0))
+
+let centerRect = Rect2(center: Point(x: 4.0, y: 4.0), size: Size(width: 3.0, height: 3.0))
+
+
+class Food {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+    
+    convenience init() {
+        self.init(name: "[Unnamed]")
+    }
+}
+
+let nameMeat = Food(name: "Bacon")
+let mysteMeat = Food()
+
+
+class RecipeIngredient: Food {
+    var quantity: Int
+    init(name: String,quantity: Int) {
+        self.quantity = quantity
+        super.init(name: name)
+    }
+    
+    override convenience init(name:String) {
+        self.init(name: name ,quantity:1)
+    }
+}
+
+
+let oneMysteryItem = RecipeIngredient()
+let oneBacon = RecipeIngredient(name: "bacon")
+let sixEggs = RecipeIngredient(name: "Eggs", quantity: 6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
